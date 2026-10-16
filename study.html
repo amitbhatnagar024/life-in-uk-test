@@ -117,6 +117,13 @@
     body { background: #fff; }
     .card { box-shadow: none; break-inside: avoid-page; }
   }
+  /* Story-style reading */
+  .card p.story { font-size: 15px; color: var(--text); line-height: 1.7; margin-bottom: 0.75rem; padding: 0.85rem 1rem; background: var(--surface-alt); border-radius: var(--radius); }
+  .card li { line-height: 1.6; margin-bottom: 0.4rem; }
+  .card p { line-height: 1.65; }
+  .hook { background: var(--success-bg); border-left: 3px solid var(--success); border-radius: var(--radius); padding: 0.75rem 1rem; font-size: 13.5px; line-height: 1.55; margin: 0.85rem 0; color: var(--text-secondary); }
+  .hook b:first-child { color: var(--success); }
+  @media print { .card p.story { background: none; padding: 0; } }
 </style>
 </head>
 <body>
@@ -125,7 +132,7 @@
   <div class="header">
     <div class="flag">🇬🇧</div>
     <h1>Life in the UK — Study Guide</h1>
-    <p>Everything the test asks, condensed · about 4–6 hours of study · based on the official handbook (3rd edition)</p>
+    <p>Everything the test asks, told as a story so it sticks · about a day of study · based on the official handbook (3rd edition)</p>
     <div class="top-links">
       <a class="btn btn-primary" href="index.html">Take a practice test →</a>
       <a class="btn btn-ghost" href="#cheatsheet">Jump to cheat sheet</a>
@@ -140,67 +147,88 @@
     <nav class="toc" id="toc"></nav>
   </div>
 
-  <div class="section-title">Suggested one-day plan</div>
+  <div class="section-title">How to use this guide</div>
   <div class="plan">
-    <div class="plan-step"><div class="when">Morning · 2 hrs</div><div class="what">Sections 1–3: values, the UK, history up to 1714</div></div>
-    <div class="plan-step"><div class="when">Late morning · 1 hr</div><div class="what">Section 4: history 1714 to today. Then take Practice test 1</div></div>
-    <div class="plan-step"><div class="when">Afternoon · 2 hrs</div><div class="what">Sections 5–7: modern society, government, law, community</div></div>
-    <div class="plan-step"><div class="when">Evening · 1 hr</div><div class="what">Cheat sheet, then Practice tests 2–5. Re-read any section you missed questions on</div></div>
+    <div class="plan-step"><div class="when">Read the story</div><div class="what">Each topic opens with a short paragraph that links the facts together. Read it first — it's the thread that holds the details.</div></div>
+    <div class="plan-step"><div class="when">Then the facts</div><div class="what">Each bullet is one sentence: the fact plus why it matters. Bold words are what the test asks about.</div></div>
+    <div class="plan-step"><div class="when">Lock it in</div><div class="what">Green "Remember it" boxes give a trick for the hardest bits. Say them out loud once.</div></div>
+    <div class="plan-step"><div class="when">Test yourself</div><div class="what">After each section, do a practice test. Re-read any topic where you drop marks.</div></div>
   </div>
 
-  <div class="note"><b>About out-of-date facts:</b> the official test still uses the 2013 handbook, so a few facts have changed since (the monarch, the EU, some numbers). Where that happens this guide shows <b>the handbook answer first</b> — that's what the test marks as correct — and today's fact in brackets.</div>
+  <div class="section-title">Suggested one-day plan</div>
+  <div class="plan">
+    <div class="plan-step"><div class="when">Morning · 2½ hrs</div><div class="what">Sections 1–3: values, the UK, history up to 1714</div></div>
+    <div class="plan-step"><div class="when">Midday · 1½ hrs</div><div class="what">Section 4: history 1714 to today, then Practice test 1</div></div>
+    <div class="plan-step"><div class="when">Afternoon · 2½ hrs</div><div class="what">Sections 5–7: society &amp; culture, government, law &amp; everyday life</div></div>
+    <div class="plan-step"><div class="when">Evening · 1½ hrs</div><div class="what">Cheat sheet, then two or three practice tests</div></div>
+  </div>
+
+  <div class="note"><b>About out-of-date facts:</b> the official test still uses the 2013 handbook, so a few facts have changed since (the monarch, the EU, some numbers). Where that happens this guide gives <b>the handbook answer first</b> — that's what the test marks as correct — and today's fact in brackets.</div>
 
   <!-- 1 -->
   <section class="card" id="s1" data-title="Values">
     <div class="card-head"><h2>1. Values &amp; principles of the UK</h2></div>
-    <div class="meta">≈ 15 min · frequently tested</div>
+    <div class="meta">≈ 20 min · easy marks — most wrong answers here are obviously unkind or extreme</div>
 
-    <h3>The fundamental principles of British life</h3>
+    <p class="story">The UK expects everyone who lives here — not just citizens — to share a small set of values. Think of it as a deal: <b>the UK gives you freedoms</b>, and <b>in return you take on responsibilities</b>. The test asks about both lists, and about the principles that hold the whole system together.</p>
+
+    <h3>The five fundamental principles</h3>
+    <p>These are the ideas British public life is built on. Each one is simple once you see what it protects.</p>
     <ul>
-      <li><b>Democracy</b></li>
-      <li><b>The rule of law</b> — everyone, including government, must obey the law</li>
-      <li><b>Individual liberty</b></li>
-      <li><b>Tolerance</b> of those with different faiths and beliefs</li>
-      <li><b>Participation</b> in community life</li>
+      <li><b>Democracy</b> — people choose who governs them by voting.</li>
+      <li><b>The rule of law</b> — everyone, including the government and the police, must obey the same laws.</li>
+      <li><b>Individual liberty</b> — you are free to live your own life within the law.</li>
+      <li><b>Tolerance of those with different faiths and beliefs</b> — you respect other people's right to believe differently.</li>
+      <li><b>Participation in community life</b> — you play your part, for example by volunteering or voting.</li>
     </ul>
 
-    <h3>Responsibilities if you want to live here permanently</h3>
+    <h3>What the UK offers you — the freedoms</h3>
     <ul>
-      <li>Respect and obey the law</li>
-      <li>Respect the rights of others, including their right to their own opinions</li>
-      <li>Treat others with fairness</li>
-      <li>Look after yourself and your family</li>
-      <li>Look after the area in which you live and the environment</li>
+      <li><b>Freedom of belief and religion</b> — you can follow any religion, or none.</li>
+      <li><b>Freedom of speech</b> — you can say what you think, within the law.</li>
+      <li><b>Freedom from unfair discrimination</b> — you can't be treated worse because of who you are.</li>
+      <li><b>A right to a fair trial</b> — if accused, you're heard by an independent court.</li>
+      <li><b>A right to join in the election of a government</b> — you get a say in who runs the country.</li>
     </ul>
 
-    <h3>Freedoms the UK offers</h3>
-    <p>Freedom of belief and religion · freedom of speech · freedom from unfair discrimination · a right to a fair trial · a right to join in the election of a government.</p>
+    <h3>What the UK expects of you — the responsibilities</h3>
+    <ul>
+      <li><b>Respect and obey the law.</b></li>
+      <li><b>Respect the rights of others</b>, including their right to their own opinions.</li>
+      <li><b>Treat others with fairness.</b></li>
+      <li><b>Look after yourself and your family.</b></li>
+      <li><b>Look after the area in which you live and the environment.</b></li>
+    </ul>
+
+    <div class="hook"><b>Remember it:</b> the responsibilities move outward in circles — <b>the law → other people → yourself and family → your area</b>. If an answer option sounds unkind, selfish or extreme ("intolerance", "autocracy", "pay as little tax as possible", "only mix with your own group"), it's wrong.</div>
 
     <h3>The test itself</h3>
-    <div class="chips">
-      <span class="chip"><b>24</b> questions</span>
-      <span class="chip"><b>45</b> minutes</span>
-      <span class="chip">pass mark <b>75%</b> = 18 correct</span>
-      <span class="chip">fee <b>£50</b></span>
-      <span class="chip">a pass never expires</span>
-    </div>
-    <div class="tip"><b>Trap answers:</b> the wrong options are usually the opposite of a value — "intolerance", "communism", "pay as little tax as possible", "only mix with people of your own background". If an option sounds unkind or extreme, it's wrong.</div>
+    <p>You get <b>45 minutes</b> to answer <b>24 questions</b>, and you pass with <b>75%</b> — that's <b>18 correct</b>. It costs <b>£50</b>, you must book online, and a pass never expires. To apply for settlement or citizenship you also need to show you can speak and read English. At a <b>citizenship ceremony</b>, new citizens swear or affirm allegiance to the monarch and make a pledge to respect the UK's rights, freedoms and laws.</p>
   </section>
 
   <!-- 2 -->
   <section class="card" id="s2" data-title="What is the UK">
     <div class="card-head"><h2>2. What is the UK?</h2></div>
-    <div class="meta">≈ 15 min</div>
+    <div class="meta">≈ 20 min</div>
 
+    <p class="story">The UK is a family of four nations on a group of islands in <b>north-west Europe</b>. The confusing part is the names: "Great Britain", "the UK" and "the British Isles" mean different things — and some islands are linked to the UK without being part of it. Get those straight and this whole section is easy marks.</p>
+
+    <h3>The names, from smallest to largest</h3>
     <ul>
-      <li><b>United Kingdom</b> = England, Scotland, Wales <b>and Northern Ireland</b>.</li>
-      <li><b>Great Britain</b> = England, Scotland and Wales only.</li>
-      <li><b>British Isles</b> = the whole group of islands, including the Republic of Ireland (which is a separate country).</li>
-      <li><b>Crown dependencies</b> — the Channel Islands (Jersey, Guernsey) and the Isle of Man. Linked to the UK but <b>not part of it</b>; they have their own governments.</li>
-      <li><b>British overseas territories</b> — e.g. the Falkland Islands, St Helena. Linked to the UK, not part of it.</li>
+      <li><b>Great Britain</b> is the big island: <b>England, Scotland and Wales</b> only.</li>
+      <li><b>The United Kingdom</b> adds <b>Northern Ireland</b>. Its full name is "the United Kingdom of Great Britain and Northern Ireland".</li>
+      <li><b>The British Isles</b> is the whole group of islands — including the <b>Republic of Ireland</b>, which is a separate, independent country.</li>
     </ul>
 
+    <h3>Places linked to the UK but not part of it</h3>
+    <ul>
+      <li><b>Crown dependencies</b> are the <b>Channel Islands</b> (Jersey, Guernsey) and the <b>Isle of Man</b> — they have their own governments.</li>
+      <li><b>British overseas territories</b> are further away, such as <b>St Helena</b> and the <b>Falkland Islands</b>.</li>
+    </ul>
+    <div class="hook"><b>Remember it:</b> Crown dependencies are <b>close by</b> (in the seas around Britain); overseas territories are <b>overseas</b>. Neither is part of the UK.</div>
+
     <h3>The four nations</h3>
+    <p>Each nation has its own capital, patron saint and flower. Learn them as a row in this table — questions often swap one detail for another.</p>
     <div class="tbl-wrap"><table>
       <tr><th>Nation</th><th>Capital</th><th>Patron saint &amp; day</th><th>Flower</th></tr>
       <tr><td>England</td><td>London</td><td>St George · 23 April</td><td>Rose</td></tr>
@@ -208,168 +236,201 @@
       <tr><td>Wales</td><td>Cardiff</td><td>St David · 1 March</td><td>Daffodil</td></tr>
       <tr><td>N. Ireland</td><td>Belfast</td><td>St Patrick · 17 March</td><td>Shamrock</td></tr>
     </table></div>
-    <div class="tip"><b>Memory hook:</b> the saints' days run through the year in order <b>D-P-G-A</b>: David (Mar 1) → Patrick (Mar 17) → George (Apr 23) → Andrew (Nov 30). Only Scotland and Northern Ireland make theirs official holidays.</div>
-
-    <h3>Key facts</h3>
-    <ul>
-      <li>Currency: <b>pound sterling (£)</b>. Scotland and Northern Ireland print their own banknotes, valid everywhere in the UK.</li>
-      <li>Languages: English, plus <b>Welsh</b> (Wales), <b>Gaelic</b> (Scotland), <b>Irish Gaelic</b> (Northern Ireland).</li>
-      <li>Longest distance on the mainland: <b>John O'Groats</b> (north Scotland) to <b>Land's End</b> (Cornwall) — about 870 miles.</li>
-      <li>Population (handbook): just over <b>62 million</b> in 2010. About 84% live in England, 8% Scotland, 5% Wales, under 3% Northern Ireland.</li>
-    </ul>
+    <div class="hook"><b>Remember it:</b> the saints' days run through the year as <b>D-P-G-A</b> — David (1 Mar) → Patrick (17 Mar) → George (23 Apr) → Andrew (30 Nov). Only <b>Scotland and Northern Ireland</b> make theirs an official holiday.</div>
 
     <h3>The Union Flag</h3>
-    <p>Combines the crosses of <b>St George</b> (red cross on white, England), <b>St Andrew</b> (white diagonal on blue, Scotland) and <b>St Patrick</b> (red diagonal on white, Ireland). Created <b>1801</b>. <b>Wales is not represented</b> — the Welsh flag has a red dragon.</p>
+    <p>The flag — also called the <b>Union Jack</b> — is literally three flags laid on top of each other, one for each kingdom that joined the union. Its current form dates from <b>1801</b>, when Ireland joined.</p>
+    <ul>
+      <li><b>St George's cross</b> (England) is a red cross on white.</li>
+      <li><b>St Andrew's cross</b> (Scotland) is a white diagonal cross on blue.</li>
+      <li><b>St Patrick's cross</b> (Ireland) is a red diagonal cross on white.</li>
+      <li><b>Wales is not on it</b>, because Wales was already united with England by then. The Welsh flag has a red dragon instead.</li>
+    </ul>
+
+    <h3>Everyday facts</h3>
+    <ul>
+      <li>The currency is the <b>pound sterling (£)</b>. <b>Scotland and Northern Ireland print their own banknotes</b>, and these are valid everywhere in the UK.</li>
+      <li>Coins are 1p, 2p, 5p, 10p, 20p, 50p, £1 and £2 — there is <b>no 25p coin</b>. Notes are £5, £10, £20 and <b>£50</b>, the highest.</li>
+      <li><b>Welsh</b> is widely spoken in Wales and taught in schools; <b>Gaelic</b> is spoken in parts of Scotland; <b>Irish Gaelic</b> in parts of Northern Ireland.</li>
+      <li>The longest distance on the mainland is from <b>John O'Groats</b> in Scotland to <b>Land's End</b> in Cornwall — about 870 miles.</li>
+      <li>The population was just over <b>62 million</b> in 2010, with about 84% living in England. Almost <b>10%</b> of people have a parent or grandparent born outside the UK.</li>
+    </ul>
   </section>
 
   <!-- 3 -->
   <section class="card" id="s3" data-title="History to 1714">
     <div class="card-head"><h2>3. History: Stone Age to 1714</h2></div>
-    <div class="meta">≈ 75 min · the biggest topic — most questions come from history</div>
+    <div class="meta">≈ 90 min · the biggest topic — many questions come from history</div>
 
-    <h3>Early Britain</h3>
+    <p class="story">British history is a long chain of <b>arrivals</b>: hunters, then farmers, then Romans, Anglo-Saxons, Vikings and Normans. After 1066 nobody successfully invades England again, and the story turns inward — kings struggling with nobles, with Parliament and with the Church, until Parliament wins. Hold on to that shape and the dates hang off it.</p>
+
+    <h3>Early Britain — from hunters to farmers</h3>
+    <p>The first people were <b>hunter-gatherers</b> who walked here, because Britain was joined to the continent by a land bridge. It became an island about <b>10,000 years ago</b>.</p>
     <ul>
-      <li><b>Stone Age:</b> hunter-gatherers. Britain was joined to the continent by a land bridge and became an island about <b>10,000 years ago</b>.</li>
-      <li><b>First farmers</b> arrived about <b>6,000 years ago</b>, probably from south-east Europe.</li>
-      <li><b>Stonehenge</b> (Wiltshire) — built by early farmers. <b>Skara Brae</b> (Orkney) — the best-preserved prehistoric village in northern Europe.</li>
-      <li><b>Bronze Age</b> (~4,000 years ago): metalworking; dead buried in <b>round barrows</b>.</li>
-      <li><b>Iron Age:</b> hill forts (e.g. <b>Maiden Castle</b>, Dorset). People spoke Celtic languages. Made the <b>first coins</b> minted in Britain, some inscribed with the <b>names of Iron Age kings</b>.</li>
+      <li><b>The first farmers</b> arrived about <b>6,000 years ago</b>, probably from south-east Europe. Settling down let them build monuments.</li>
+      <li>They built <b>Stonehenge</b> in <b>Wiltshire</b>, and the stone village of <b>Skara Brae</b> on <b>Orkney</b> — the best-preserved prehistoric village in northern Europe.</li>
+      <li>In the <b>Bronze Age</b> (about 4,000 years ago) people learned to work metal and buried their dead in <b>round barrows</b>.</li>
+      <li>In the <b>Iron Age</b> people built <b>hill forts</b> such as <b>Maiden Castle</b> in Dorset, spoke Celtic languages, and made <b>the first coins minted in Britain</b> — some carrying the <b>names of Iron Age kings</b>.</li>
     </ul>
 
-    <h3>Romans (AD 43 – 410)</h3>
+    <h3>The Romans (AD 43–410)</h3>
+    <p>Rome tried twice. <b>Julius Caesar's</b> invasion in <b>55 BC failed</b>; Emperor <b>Claudius</b> succeeded in <b>AD 43</b>. The Romans then stayed about <b>400 years</b> and left in <b>AD 410</b> to defend the rest of their empire.</p>
     <ul>
-      <li><b>Julius Caesar</b> invaded in <b>55 BC</b> — <b>unsuccessful</b>.</li>
-      <li>Emperor <b>Claudius</b> invaded in <b>AD 43</b> — successful.</li>
-      <li><b>Boudicca</b>, queen of the <b>Iceni</b> (eastern England), fought the Romans. Her statue is on Westminster Bridge, London.</li>
-      <li><b>Hadrian's Wall</b> was built to keep out the <b>Picts</b> (ancestors of the Scots).</li>
-      <li>Romans stayed about <b>400 years</b>, leaving in <b>AD 410</b>. They brought roads, public buildings, law, new plants and animals. First Christian communities appeared in the 3rd and 4th centuries.</li>
+      <li><b>Boudicca</b>, queen of the <b>Iceni</b> tribe in eastern England, led a revolt against them. Her statue stands on <b>Westminster Bridge</b>.</li>
+      <li>The Romans never conquered Scotland. Emperor <b>Hadrian</b> built a wall to keep out the <b>Picts</b>; you can still visit forts on it at <b>Housesteads</b> and <b>Vindolanda</b>.</li>
+      <li>They left behind <b>roads, public buildings, a system of law</b>, new plants and animals — and the first <b>Christian communities</b> (3rd–4th centuries).</li>
     </ul>
 
-    <h3>Anglo-Saxons &amp; Vikings</h3>
+    <h3>Anglo-Saxons and Vikings</h3>
+    <p>When the Romans left, tribes from northern Europe — the <b>Jutes, Angles and Saxons</b> — moved in. They weren't Christian at first, so missionaries came to convert them.</p>
     <ul>
-      <li>After the Romans: <b>Jutes, Angles and Saxons</b> invaded. By about AD 600 there were Anglo-Saxon kingdoms.</li>
-      <li><b>Sutton Hoo</b> (Suffolk) — burial site of an Anglo-Saxon king, buried with treasure in a ship.</li>
-      <li>Christian missionaries: <b>St Patrick</b> (Ireland), <b>St Columba</b> (monastery on <b>Iona</b>), <b>St Augustine</b> — first Archbishop of Canterbury.</li>
-      <li><b>Vikings</b> from Denmark and Norway first came in <b>AD 789</b>.</li>
-      <li><b>King Alfred the Great</b> united the Anglo-Saxon kingdoms and defeated the Vikings. Vikings settled in the east and north (the <b>Danelaw</b>).</li>
-      <li><b>Cnut (Canute)</b> — a Danish king who ruled England. In Scotland, <b>Kenneth MacAlpin</b> united the peoples under one king.</li>
+      <li>An Anglo-Saxon king was buried with treasure in a ship at <b>Sutton Hoo</b> in Suffolk.</li>
+      <li><b>St Patrick</b> converted Ireland, <b>St Columba</b> founded a monastery on <b>Iona</b>, and <b>St Augustine</b> became the <b>first Archbishop of Canterbury</b>.</li>
+      <li>The <b>Vikings</b> came from <b>Denmark and Norway</b>, first raiding in <b>AD 789</b>.</li>
+      <li><b>Alfred the Great</b> united the Anglo-Saxon kingdoms and defeated them. Vikings still settled in the east and north, an area called the <b>Danelaw</b>, and a Danish king, <b>Cnut</b>, later ruled England.</li>
+      <li>In the north, the Viking threat pushed people to unite under one king, <b>Kenneth MacAlpin</b> — the start of "Scotland".</li>
     </ul>
 
-    <h3>The Norman Conquest — 1066</h3>
+    <h3>1066 — the Norman Conquest</h3>
+    <p><b>William, Duke of Normandy</b> (northern France) defeated and killed King <b>Harold</b> at the <b>Battle of Hastings in 1066</b>. It was the <b>last successful foreign invasion of England</b> — which is why everything after it is about power struggles <i>inside</i> the country.</p>
     <ul>
-      <li><b>William, Duke of Normandy</b> defeated King <b>Harold</b> at the <b>Battle of Hastings, 1066</b>. Harold was killed.</li>
-      <li>The <b>Bayeux Tapestry</b> shows the battle. It was the <b>last successful foreign invasion</b> of England.</li>
-      <li>William ordered the <b>Domesday Book</b> — a list of all towns, villages, people, landowners and animals in England.</li>
+      <li>The battle is shown on the <b>Bayeux Tapestry</b>, which is now displayed in France.</li>
+      <li>William recorded every town, landowner and animal in England in the <b>Domesday Book</b>, and built the <b>Tower of London</b>.</li>
+      <li>The rulers spoke <b>Norman French</b> while ordinary people spoke <b>Anglo-Saxon</b>. Over time the two blended into <b>English</b>.</li>
     </ul>
+    <div class="hook"><b>Remember it:</b> two records tell us about William I's England — the <b>Domesday Book</b> (a list) and the <b>Bayeux Tapestry</b> (a picture).</div>
 
-    <h3>Middle Ages</h3>
+    <h3>The Middle Ages — kings limited, nations shaped</h3>
+    <p>This period has three themes: kings learning they're <b>not above the law</b>, England fighting its neighbours, and <b>disaster changing society</b>.</p>
     <ul>
-      <li><b>Magna Carta, 1215</b> — King <b>John</b> was forced to agree to it. It established that even the king is subject to the law.</li>
-      <li><b>Wales</b> conquered by <b>Edward I</b>; the <b>Statute of Rhuddlan (1284)</b> annexed Wales. Castles like Conwy and Caernarvon.</li>
-      <li><b>Battle of Bannockburn, 1314</b> — <b>Robert the Bruce</b> defeated the English; Scotland stayed unconquered.</li>
-      <li>In Ireland the English controlled only <b>the Pale</b>, an area around Dublin.</li>
-      <li><b>Crusades</b> — knights fought for control of the Holy Land.</li>
-      <li><b>Hundred Years War</b> with France — actually lasted <b>116 years</b> (1337–1453). <b>Battle of Agincourt, 1415</b> — won by <b>Henry V</b>.</li>
-      <li><b>Black Death, 1348</b> — plague killed about <b>one third</b> of England's population. Labour shortages followed, helping peasants.</li>
-      <li>Parliament developed: <b>House of Lords</b> (nobility, bishops) and <b>House of Commons</b> (knights, wealthy townspeople). Judges developed "common law" based on precedent.</li>
-      <li>Language: Norman French + Anglo-Saxon blended into <b>English</b>. <b>Geoffrey Chaucer</b> wrote <i>The Canterbury Tales</i>. <b>William Caxton</b> was the first person in England to print books.</li>
-      <li><b>Wars of the Roses (1455)</b>: House of <b>Lancaster</b> (red rose) vs House of <b>York</b> (white rose). Ended at the <b>Battle of Bosworth Field, 1485</b> — <b>Richard III</b> killed; <b>Henry Tudor</b> became <b>Henry VII</b>, married Elizabeth of York and combined the roses into the red-and-white <b>Tudor rose</b>.</li>
+      <li><b>Magna Carta, 1215</b>: nobles forced <b>King John</b> to accept that even the king must obey the law.</li>
+      <li><b>Parliament</b> began to develop, with a <b>House of Lords</b> (nobles and bishops) and a <b>House of Commons</b>. Judges built up <b>"common law"</b> by following earlier decisions (precedent).</li>
+      <li><b>Wales</b> was conquered by <b>Edward I</b>, made official by the <b>Statute of Rhuddlan (1284)</b>; he built castles such as Conwy and Caernarvon.</li>
+      <li><b>Scotland</b> stayed free: <b>Robert the Bruce</b> beat the English at <b>Bannockburn in 1314</b>.</li>
+      <li>In <b>Ireland</b> the English controlled only <b>"the Pale"</b>, an area around Dublin.</li>
+      <li>English kings fought France in the <b>Hundred Years War</b> — which actually lasted <b>116 years</b>. <b>Henry V</b> won at <b>Agincourt in 1415</b>. Knights also fought in the <b>Crusades</b> for the Holy Land.</li>
+      <li><b>The Black Death</b> (probably plague) arrived in <b>1348</b> and killed about <b>one third</b> of England. With so few workers left, peasants could demand higher wages — society shifted.</li>
+      <li>Most peasants were <b>serfs</b>, who farmed a small plot of their lord's land and worked his land too.</li>
+      <li><b>Chaucer</b> wrote <i>The Canterbury Tales</i> (pilgrims travelling to Canterbury), and <b>William Caxton</b> became the first person in England to print books.</li>
     </ul>
+    <h3>The Wars of the Roses (1455–1485)</h3>
+    <p>Two branches of the royal family fought for the crown: the <b>House of Lancaster</b> (red rose) and the <b>House of York</b> (white rose). It ended at the <b>Battle of Bosworth Field in 1485</b>, where <b>Richard III</b> (York) was killed. The Lancastrian winner, <b>Henry Tudor</b>, became <b>Henry VII</b> and married Elizabeth of York — so the red and white roses combined into the <b>Tudor rose</b>.</p>
 
-    <h3>Tudors (1485 – 1603)</h3>
+    <h3>The Tudors (1485–1603) — religion splits the country</h3>
+    <p>The Tudor century is about religion. Henry VIII breaks from the Pope for personal reasons, and his three children swing the country back and forth between Protestant and Catholic.</p>
     <ul>
-      <li><b>Henry VIII</b> broke from Rome and established the <b>Church of England</b> because the Pope refused his divorce. He also formally united <b>Wales with England</b>.</li>
-      <li>His six wives, in order: <b>Catherine of Aragon</b> (divorced), <b>Anne Boleyn</b> (executed; mother of Elizabeth I), <b>Jane Seymour</b> (died after giving birth to Edward), <b>Anne of Cleves</b> (divorced), <b>Catherine Howard</b> (executed), <b>Catherine Parr</b> (survived him).
-        <br><span style="font-size:13px">Rhyme: <i>divorced, beheaded, died · divorced, beheaded, survived</i>.</span></li>
-      <li><b>Edward VI</b> — Protestant; <i>Book of Common Prayer</i>. <b>Mary I</b> ("Bloody Mary") — Catholic, persecuted Protestants.</li>
-      <li><b>Elizabeth I</b> (1558–1603) — Protestant; defeated the <b>Spanish Armada in 1588</b>. Never married, no children.</li>
-      <li><b>Sir Francis Drake</b> — one of the first to sail around the world, in the <i>Golden Hind</i>.</li>
-      <li><b>William Shakespeare</b> (1564–1616), born in Stratford-upon-Avon. Plays include <i>Romeo and Juliet</i>, <i>Hamlet</i>, <i>Macbeth</i>, <i>A Midsummer Night's Dream</i>.</li>
-      <li>Scotland: <b>Mary, Queen of Scots</b> — Catholic, fled to England, executed by Elizabeth I. Her son became James VI of Scotland.</li>
-      <li>Reformation in Scotland — the Church of Scotland (Presbyterian) was created.</li>
+      <li><b>Henry VIII</b> wanted to divorce <b>Catherine of Aragon</b>; when the Pope refused, he created the <b>Church of England</b>, with the king — not the Pope — in charge. This was part of the wider <b>Reformation</b>, a movement against the Pope's authority.</li>
+      <li>Henry also formally <b>united Wales with England</b>.</li>
+      <li>His six wives: Catherine of Aragon, <b>Anne Boleyn</b> (executed at the Tower; mother of Elizabeth I), <b>Jane Seymour</b> (died after giving birth to Edward), Anne of Cleves, Catherine Howard, <b>Catherine Parr</b> (outlived him).</li>
+      <li>His son <b>Edward VI</b> was strongly Protestant — the <b>Book of Common Prayer</b> was written in his reign. Then <b>Mary I</b> ("<b>Bloody Mary</b>") was Catholic and persecuted Protestants.</li>
+      <li><b>Elizabeth I</b> (1558–1603) was Protestant but took a <b>middle way</b> between the extremes. Her navy defeated the <b>Spanish Armada in 1588</b>. Explorers like <b>Sir Francis Drake</b> sailed round the world, and settlers began colonising <b>America's east coast</b>.</li>
+      <li><b>Shakespeare</b> (1564–1616), from <b>Stratford-upon-Avon</b>, wrote in this age: <i>Romeo and Juliet, Hamlet, Macbeth, A Midsummer Night's Dream</i>.</li>
+      <li>In Scotland, Parliament ended the Pope's authority in <b>1560</b> and set up a Protestant church — but, unlike England's, <b>not a state church</b>. The Catholic <b>Mary, Queen of Scots</b> fled to England and was executed for plotting against Elizabeth.</li>
     </ul>
+    <div class="hook"><b>Remember it:</b> Henry VIII's wives — <i>divorced, beheaded, died · divorced, beheaded, survived</i>. His children — <b>Edward</b> Protestant, <b>Mary</b> Catholic, <b>Elizabeth</b> middle way.</div>
 
-    <h3>Stuarts (1603 – 1714)</h3>
+    <h3>The Stuarts (1603–1714) — king versus Parliament</h3>
+    <p>The big Stuart story is a fight over who really rules. Kings who claimed power from God clashed with Parliament, which led to civil war, a republic, a return of the monarchy, and finally the deal that still exists today: <b>Parliament holds the real power</b>.</p>
     <ul>
-      <li><b>1603</b>: <b>James VI of Scotland</b> also became <b>James I of England</b> — one king, but still separate countries. He ordered the <b>King James Bible</b>.</li>
-      <li>Ireland: Protestant settlers given land in Ulster (the <b>plantations</b>).</li>
-      <li><b>Civil War, 1642</b>: <b>Cavaliers</b> (king's supporters) vs <b>Roundheads</b> (Parliament). Parliament won; <b>Charles I executed in 1649</b>.</li>
-      <li>England became a republic, the <b>Commonwealth</b>. <b>Oliver Cromwell</b> ruled as <b>Lord Protector</b> until his death in <b>1658</b>.</li>
-      <li><b>Restoration, 1660</b>: <b>Charles II</b> became king. <b>Great Plague (1665)</b> and <b>Great Fire of London (1666)</b> — Sir <b>Christopher Wren</b> rebuilt <b>St Paul's Cathedral</b>. The <b>Royal Society</b> was founded.</li>
-      <li><b>Habeas Corpus Act, 1679</b> — no one can be held unlawfully; you must be brought before a court.</li>
-      <li><b>Glorious Revolution, 1688</b>: Protestant <b>William of Orange</b> invaded; Catholic James II fled. William and Mary became joint rulers. <b>Battle of the Boyne, 1690</b> (Ireland) — William defeated James.</li>
-      <li><b>Bill of Rights, 1689</b> — limited the monarch's power; a Catholic cannot be monarch.</li>
-      <li><b>Act of Union, 1707</b>: England and Scotland united as the <b>Kingdom of Great Britain</b>. Scotland kept its own legal, education and church systems.</li>
-      <li>Science: <b>Isaac Newton</b> — gravity, light and colour.</li>
+      <li><b>1603</b>: Elizabeth died childless, so <b>James VI of Scotland</b> also became <b>James I of England</b> — one king, two separate countries. He ordered the <b>King James Bible</b> (the "Authorised Version"). Protestant settlers were given land in Ulster — the <b>plantations</b>.</li>
+      <li><b>Charles I</b> believed in the <b>"Divine Right of Kings"</b> and tried to rule without Parliament. War broke out in <b>1642</b>: <b>Cavaliers</b> (for the king) against <b>Roundheads</b> (for Parliament), with battles at <b>Marston Moor</b> and <b>Naseby</b>. Many Roundheads were <b>Puritans</b>.</li>
+      <li>Parliament won and <b>Charles I was executed in 1649</b>. England became a republic, the <b>Commonwealth</b>, led by <b>Oliver Cromwell</b> as <b>Lord Protector</b> until he died in <b>1658</b>.</li>
+      <li>His son <b>Charles II</b>, defeated by Cromwell, had famously <b>hidden in an oak tree</b> before fleeing abroad. He returned as king in <b>1660 — the Restoration</b>. His reign saw the <b>Great Plague (1665)</b>, the <b>Great Fire of London (1666)</b> — after which <b>Wren</b> rebuilt <b>St Paul's</b> — and the <b>Habeas Corpus Act (1679)</b>, which says no one can be held unlawfully.</li>
+      <li>In <b>1688</b>, Protestants invited <b>William of Orange</b> to take the throne from Catholic James II — the <b>"Glorious Revolution"</b>, glorious because there was no fighting in England. William beat James at the <b>Battle of the Boyne (1690)</b> in Ireland. In Scotland, the <b>MacDonalds of Glencoe</b> were massacred in 1692 for being late to swear loyalty to him.</li>
+      <li>The <b>Bill of Rights (1689)</b> limited the monarch's power and confirmed Parliament's — the start of <b>constitutional monarchy</b>. It did <i>not</i> give anyone new votes.</li>
+      <li>Refugees arrived too: <b>Huguenots</b> — French Protestants — between 1680 and 1720.</li>
+      <li>The <b>Act of Union, 1707</b> joined England and Scotland as the <b>Kingdom of Great Britain</b>. Scotland kept its own <b>law, education and church</b>.</li>
+      <li>Science flourished: <b>Isaac Newton</b> showed that <b>gravity</b> applies across the whole universe.</li>
     </ul>
+    <div class="hook"><b>Remember it:</b> the king-vs-Parliament story in four numbers — <b>1642</b> war starts · <b>1649</b> king executed · <b>1660</b> king restored · <b>1688</b> Parliament chooses the king.</div>
   </section>
 
   <!-- 4 -->
   <section class="card" id="s4" data-title="History 1714–today">
     <div class="card-head"><h2>4. History: 1714 to today</h2></div>
-    <div class="meta">≈ 60 min</div>
+    <div class="meta">≈ 75 min</div>
 
-    <h3>18th century</h3>
+    <p class="story">With Parliament now in charge, Britain's energy goes into <b>trade, industry and empire</b>. Machines powered by steam transform the country, the empire grows to be the largest in history, and ordinary people gradually win rights — the vote, fair working hours, free healthcare. In the 20th century two world wars and the end of empire reshape the country into the modern UK.</p>
+
+    <h3>The 18th century — ideas, industry and empire</h3>
     <ul>
-      <li><b>Sir Robert Walpole</b> — the <b>first Prime Minister</b> (1721–1742).</li>
-      <li><b>Jacobites</b>: <b>Bonnie Prince Charlie</b> (Charles Edward Stuart) tried to retake the throne; defeated at the <b>Battle of Culloden, 1746</b>. Later the <b>Highland Clearances</b> drove many Scots from their land.</li>
-      <li><b>The Enlightenment</b>: <b>Adam Smith</b> (economics), <b>David Hume</b> (philosophy), <b>James Watt</b> (steam power). <b>Robert Burns</b> — Scotland's poet (<i>Auld Lang Syne</i>).</li>
-      <li><b>Industrial Revolution</b>: <b>Richard Arkwright</b> (horse-driven spinning mill, efficient factories), <b>Bessemer process</b> (mass-produced steel), canals, railways. <b>Isambard Kingdom Brunel</b> — engineer of the Great Western Railway, tunnels, bridges and ships.</li>
-      <li><b>American War of Independence</b> — 13 colonies declared independence in <b>1776</b>.</li>
-      <li><b>Slave trade</b>: <b>William Wilberforce</b> led the campaign. Trading slaves banned <b>1807</b>; slavery abolished in the British Empire <b>1833</b>. Afterwards 2 million migrants from India and China came to work.</li>
+      <li><b>Sir Robert Walpole</b> became the <b>first Prime Minister</b> (1721–42), as power moved from the monarch to Parliament.</li>
+      <li>The last attempt to bring back the Stuarts came from <b>Bonnie Prince Charlie</b>, backed by Highland clans. He was defeated at <b>Culloden in 1746</b>. Later, in the <b>Highland Clearances</b>, landlords cleared small farms for sheep and cattle, and many Scots emigrated.</li>
+      <li><b>The Enlightenment</b> brought new ideas: <b>Adam Smith</b> on economics, <b>David Hume</b> on human nature, and <b>James Watt's</b> work on steam power. <b>Robert Burns</b> wrote <i>Auld Lang Syne</i>, sung at New Year.</li>
+      <li><b>The Industrial Revolution</b> moved Britain from farming to factories, all driven by <b>steam power</b>. <b>Richard Arkwright</b> ran efficient spinning mills; <b>canals</b> linked factories to towns and ports; the <b>Bessemer process</b> mass-produced steel; <b>Brunel</b> built the <b>Great Western Railway</b>.</li>
+      <li><b>France</b> was Britain's main rival for trade and colonies. <b>Captain Cook</b> mapped the coast of <b>Australia</b>. The <b>American colonies</b> rebelled against British taxes and declared independence in <b>1776</b>.</li>
+      <li><b>Sake Dean Mahomet</b> opened Britain's first curry house (1810) and introduced "shampooing" (head massage).</li>
     </ul>
 
-    <h3>19th century</h3>
+    <h3>Ending slavery</h3>
+    <p>Britain's trade also included the <b>slave trade</b>, taking people mainly from <b>West Africa</b> to the Americas. A campaign led in Parliament by <b>William Wilberforce</b> ended it in stages:</p>
     <ul>
-      <li><b>Battle of Trafalgar, 1805</b> — Admiral <b>Nelson</b> defeated the French and Spanish fleets; he died in the battle. Nelson's Column in Trafalgar Square.</li>
-      <li><b>Battle of Waterloo, 1815</b> — the <b>Duke of Wellington</b> defeated Napoleon.</li>
-      <li><b>1801</b>: Act of Union with Ireland → the <b>United Kingdom of Great Britain and Ireland</b>; the Union Flag created.</li>
-      <li><b>Queen Victoria</b> (1837–1901) — the British Empire became the largest the world had seen.</li>
-      <li><b>Great Exhibition, 1851</b>, in the <b>Crystal Palace</b>, Hyde Park — organised by Prince Albert.</li>
-      <li><b>Irish famine</b> (mid-1840s) — potato crop failed; a million died, 1.5 million emigrated.</li>
-      <li><b>Reform Act 1832</b> — more men could vote; later reforms extended this further.</li>
-      <li>Women: <b>Married Women's Property Acts (1870, 1882)</b> let married women keep their own money and property. <b>Florence Nightingale</b> — nursing in the <b>Crimean War</b>; founder of <b>modern nursing</b>, set up a nursing school at St Thomas' Hospital, London.</li>
-      <li><b>Boer War (1899–1902)</b> in South Africa. <b>Rudyard Kipling</b> — writer (<i>The Jungle Book</i>, poem <i>If</i>).</li>
+      <li><b>1807</b> — trading slaves in British ships and ports was banned.</li>
+      <li><b>1833</b> — slavery itself was abolished throughout the British Empire. Around 2 million workers then came from <b>India and China</b> to replace the freed slaves.</li>
     </ul>
 
-    <h3>Women's vote</h3>
+    <h3>The 19th century — the Victorian age</h3>
     <ul>
-      <li><b>Emmeline Pankhurst</b> led the <b>suffragettes</b>.</li>
-      <li><b>1918</b>: women <b>over 30</b> could vote. <b>1928</b>: women got the vote at <b>21</b>, the same as men.</li>
+      <li><b>Admiral Nelson</b> beat the French and Spanish fleets at <b>Trafalgar (1805)</b> but was killed; his ship HMS Victory is in Portsmouth. The <b>Duke of Wellington</b> finally beat Napoleon at <b>Waterloo (1815)</b> — the last major battle between Britain and France.</li>
+      <li>In <b>1801</b> Ireland joined the union, creating the <b>United Kingdom of Great Britain and Ireland</b>.</li>
+      <li><b>Queen Victoria</b> reigned for almost 64 years, <b>1837–1901</b>. Britain produced over half the world's iron, coal and cotton cloth, and promoted <b>free trade</b> — for example by repealing the <b>Corn Laws (1846)</b>.</li>
+      <li><b>Prince Albert</b> organised the <b>Great Exhibition of 1851</b> in the <b>Crystal Palace</b>, Hyde Park. The population then was about 20 million.</li>
+      <li>The <b>Irish famine</b> of the 1840s, caused by the failure of the <b>potato crop</b>, killed a million people and drove 1.5 million to emigrate. Some Irish nationalists, the <b>Fenians</b>, wanted full independence.</li>
+      <li>In the <b>Crimean War (1853–56)</b> Britain fought <b>Russia</b>, alongside France and Turkey — the first war reported with news photographs. <b>Florence Nightingale</b> nursed soldiers there and became the founder of <b>modern nursing</b>.</li>
+      <li>Rights slowly grew: the <b>Reform Act 1832</b> gave more men the vote; the <b>Factories Act 1847</b> limited women and children to <b>10 hours</b> a day; the <b>Married Women's Property Acts (1870, 1882)</b> let wives keep their own money and property.</li>
+      <li>About 120,000 <b>Russian and Polish Jews</b> came to Britain between 1870 and 1914 to escape persecution.</li>
+      <li>The <b>Boer War (1899–1902)</b> was fought in South Africa against settlers of Dutch origin. <b>Rudyard Kipling</b> wrote <i>The Jungle Book</i>.</li>
     </ul>
 
-    <h3>20th century</h3>
+    <h3>Votes for women</h3>
+    <p><b>Emmeline Pankhurst</b> founded the Women's Franchise League (1889) and then led the <b>suffragettes</b>, who used protest and civil disobedience. Their campaign — and women's war work — paid off in two steps:</p>
     <ul>
-      <li><b>First World War, 1914–1918</b>. Armistice at 11am on <b>11 November 1918</b>. <b>Battle of the Somme</b> (1 July 1916) — about 60,000 British casualties on the first day.</li>
-      <li>Ireland: Home Rule promised in 1913 but delayed by the war. <b>Easter Rising, 1916</b>. Ireland split in <b>1921/22</b>: the south became the Irish Free State (a republic in <b>1949</b>); Northern Ireland stayed in the UK. Later conflict known as <b>"the Troubles"</b>.</li>
-      <li><b>Great Depression</b> (1930s) — mass unemployment; but new industries (cars, aviation) grew.</li>
-      <li><b>Second World War, 1939–1945</b>: began when Hitler invaded Poland. <b>Winston Churchill</b> PM from 1940 (famous speeches: "We shall fight on the beaches"); voted the greatest Briton of all time in 2002.
-        <ul>
-          <li><b>Dunkirk, 1940</b> — 300,000 soldiers evacuated from France by small boats.</li>
-          <li><b>Battle of Britain, summer 1940</b> — RAF (Spitfires, Hurricanes) won the air battle against Germany.</li>
-          <li><b>The Blitz</b> — German bombing of British cities (London, Coventry and others).</li>
-          <li><b>D-Day, 6 June 1944</b> — Allied landings in Normandy. Germany surrendered May 1945; Japan in August 1945 after atomic bombs.</li>
-        </ul></li>
-      <li><b>Post-war Labour government</b>: <b>Clement Attlee</b> PM (1945–51). <b>NHS founded 1948</b> by Health Minister <b>Aneurin (Nye) Bevan</b>. <b>Beveridge Report (1942)</b> → the welfare state. <b>R A Butler</b>'s <b>1944 Education Act</b> — free secondary education.</li>
-      <li>Empire to Commonwealth: <b>India and Pakistan</b> independent in <b>1947</b>. 1950s labour shortages → migrants from the West Indies, India and Pakistan.</li>
-      <li><b>1960s</b> — "Swinging Sixties": fashion, music, the Beatles; laws on divorce and abortion liberalised.</li>
-      <li><b>1973</b>: UK joined the European Economic Community (EEC). <i>(The UK left the EU on 31 January 2020 — not in the handbook.)</i></li>
-      <li><b>Margaret Thatcher</b> — first woman PM, <b>1979–1990</b>, the longest-serving PM of the 20th century.</li>
-      <li><b>Tony Blair</b> (Labour) 1997–2007: devolution — <b>Scottish Parliament</b> and <b>Welsh Assembly</b> from <b>1999</b>; <b>Good Friday Agreement, 1998</b> for Northern Ireland. Then Gordon Brown; in 2010 a <b>Conservative–Liberal Democrat coalition</b> (David Cameron PM, Nick Clegg deputy).</li>
+      <li><b>1918</b> — women <b>over 30</b> got the vote.</li>
+      <li><b>1928</b> — women got the vote at <b>21</b>, the same as men. (The voting age for everyone dropped to <b>18 in 1969</b>.)</li>
+    </ul>
+    <div class="hook"><b>Remember it:</b> <b>18 → 30, 28 → 21</b>. In 19<b>18</b> the age was <b>30</b>; in 19<b>28</b> it became <b>21</b>.</div>
+
+    <h3>The First World War (1914–1918)</h3>
+    <p>The war was triggered by the assassination of <b>Archduke Franz Ferdinand</b> of Austria in 1914. The <b>Battle of the Somme</b> (from 1 July 1916) cost about 60,000 British casualties on the first day alone. The war ended at <b>11am on 11 November 1918</b> — which is why we remember it at 11am on 11 November each year.</p>
+    <p>Meanwhile Ireland had been promised <b>Home Rule</b>, but the war delayed it. After the <b>Easter Rising (1916)</b>, Ireland split in <b>1922</b>: the south became the Irish Free State (a republic in <b>1949</b>) and <b>Northern Ireland stayed in the UK</b>. Later conflict there is called <b>"the Troubles"</b>.</p>
+
+    <h3>Between the wars and the Second World War (1939–1945)</h3>
+    <p>The <b>Great Depression</b> of the 1930s hit traditional industries like shipbuilding hard. Then, when <b>Germany invaded Poland in 1939</b>, Britain and France declared war. <b>Winston Churchill</b> became PM in 1940 and kept the country fighting with famous speeches; in 2002 he was voted the greatest Briton ever.</p>
+    <ul>
+      <li><b>Dunkirk (1940)</b>: about 300,000 soldiers were rescued from France, helped by many civilian <b>small boats</b> — the "Dunkirk spirit".</li>
+      <li><b>Battle of Britain (summer 1940)</b>: the <b>RAF</b>, flying Spitfires and Hurricanes, beat the German air force.</li>
+      <li><b>The Blitz</b>: German bombing of London, Coventry and other cities.</li>
+      <li><b>D-Day, 6 June 1944</b>: Allied forces landed in <b>Normandy</b>. The war ended in 1945, and the <b>United Nations</b> was set up afterwards.</li>
+    </ul>
+
+    <h3>After 1945 — building the modern UK</h3>
+    <p>After the war, voters chose a Labour government under <b>Clement Attlee</b> (1945–51) to rebuild the country around one idea: the state should look after people "from cradle to grave".</p>
+    <ul>
+      <li>The <b>Beveridge Report (1942)</b> laid the plan for the <b>welfare state</b>.</li>
+      <li>The <b>NHS</b> began in <b>1948</b>, led by Health Minister <b>Aneurin (Nye) Bevan</b>.</li>
+      <li>The <b>1944 Education Act ("Butler Act")</b> introduced free secondary education.</li>
+      <li>The empire became the Commonwealth: <b>India and Pakistan</b> became independent in <b>1947</b>. To fill labour shortages, people came from the <b>West Indies</b>, India and Pakistan.</li>
+      <li>The <b>1960s ("Swinging Sixties")</b> brought fashion, film and pop music — the <b>Beatles</b> and the <b>Rolling Stones</b> — and more liberal laws on divorce and abortion.</li>
+      <li>The UK joined the European Economic Community in <b>1973</b>. <i>(It left the EU on 31 January 2020.)</i></li>
+      <li><b>Margaret Thatcher</b>, the first woman PM, served <b>1979–1990</b> — the longest of any 20th-century PM. In <b>1982</b> Argentina invaded the <b>Falklands</b> and British forces took them back. <b>John Major</b> followed and helped start the Northern Ireland peace process.</li>
+      <li><b>Tony Blair</b> (1997–2007) brought <b>devolution</b>: the Scottish Parliament and Welsh Assembly opened in <b>1999</b>, and the <b>Good Friday Agreement (1998)</b> brought peace and an Assembly to Northern Ireland.</li>
+      <li>In <b>2010</b> no party won a majority, so the <b>Conservatives and Liberal Democrats</b> formed a <b>coalition</b>. Queen Elizabeth II celebrated her <b>Diamond Jubilee</b> in <b>2012</b>.</li>
     </ul>
 
     <h3>British inventions — who did what</h3>
+    <p>Questions love "who invented…". This table pairs each name with one thing.</p>
     <div class="tbl-wrap"><table>
       <tr><th>Person</th><th>Invention / achievement</th></tr>
-      <tr><td>John Logie Baird</td><td>Television (1920s) — Scottish</td></tr>
-      <tr><td>Robert Watson-Watt</td><td>Radar</td></tr>
+      <tr><td>John Logie Baird</td><td>Television (1920s); first TV broadcast London–Glasgow, 1932</td></tr>
+      <tr><td>Robert Watson-Watt</td><td>Radar — helped win the Battle of Britain</td></tr>
       <tr><td>Frank Whittle</td><td>Jet engine (1930s)</td></tr>
-      <tr><td>Alan Turing</td><td>"Turing machine" — the basis of modern computers</td></tr>
+      <tr><td>Alan Turing</td><td>The "Turing machine" — the idea behind modern computers</td></tr>
+      <tr><td>Ernest Rutherford</td><td>Led the team that first split the atom</td></tr>
       <tr><td>Alexander Fleming</td><td>Penicillin (1928)</td></tr>
       <tr><td>Francis Crick</td><td>Structure of DNA (with James Watson, 1953)</td></tr>
       <tr><td>Christopher Cockerell</td><td>Hovercraft</td></tr>
       <tr><td>Peter Mansfield</td><td>MRI scanner</td></tr>
-      <tr><td>James Goodfellow</td><td>Cash machine (ATM) / PIN</td></tr>
+      <tr><td>James Goodfellow</td><td>Cash machine (ATM) and PIN</td></tr>
       <tr><td>Edwards &amp; Steptoe</td><td>IVF — first "test-tube baby", 1978</td></tr>
       <tr><td>Wilmut &amp; Campbell</td><td>Dolly the sheep — first cloned mammal, 1996</td></tr>
       <tr><td>Tim Berners-Lee</td><td>World Wide Web (first online 1990)</td></tr>
@@ -379,164 +440,192 @@
   </section>
 
   <!-- 5 -->
-  <section class="card" id="s5" data-title="Modern society">
+  <section class="card" id="s5" data-title="Society &amp; culture">
     <div class="card-head"><h2>5. A modern, thriving society</h2></div>
-    <div class="meta">≈ 60 min · lots of easy marks if you've skimmed it</div>
+    <div class="meta">≈ 75 min · lots of easy marks if you've read it once</div>
+
+    <p class="story">This chapter is about everyday British life: what people believe, what they celebrate, the sport they watch, and the art, books and places the country is proud of. There's no story to follow here, so the trick is to <b>group facts</b> — each festival with its faith, each sportsperson with their sport, each writer with their book.</p>
 
     <h3>Religion</h3>
+    <p>The UK is mainly Christian but increasingly varied. In the 2011 Census about <b>59%</b> said they were Christian, about 5% Muslim, smaller numbers Hindu, Sikh, Jewish and Buddhist, and about <b>25%</b> no religion.</p>
     <ul>
-      <li>About <b>59%</b> identify as Christian; 4.8% Muslim, 1.5% Hindu, 0.8% Sikh, 0.5% Jewish, 0.4% Buddhist; about 25% no religion.</li>
-      <li><b>Church of England</b> (Anglican) — the state church in England. The <b>monarch is its Supreme Governor</b>; the spiritual leader is the <b>Archbishop of Canterbury</b>.</li>
-      <li><b>Church of Scotland</b> — Presbyterian, run by ministers and elders, chaired by the <b>Moderator</b>.</li>
-      <li>There is <b>no state church</b> in Wales or Northern Ireland.</li>
+      <li>England's state church is the <b>Church of England</b> (Anglican). The <b>monarch is its Supreme Governor</b>, and its spiritual leader is the <b>Archbishop of Canterbury</b>. Some of its bishops sit in the House of Lords.</li>
+      <li>Scotland's national church is the <b>Church of Scotland</b>, which is <b>Presbyterian</b> — run by ministers and elders and chaired by a <b>Moderator</b>.</li>
+      <li><b>Wales and Northern Ireland have no established church.</b></li>
     </ul>
 
-    <h3>Festivals &amp; special days</h3>
+    <h3>Festivals through the year</h3>
+    <p>Read this table top to bottom like a calendar. Each religion's festivals are worth a mark or two.</p>
     <div class="tbl-wrap"><table>
       <tr><th>When</th><th>What</th></tr>
-      <tr><td>1 Jan</td><td>New Year. In Scotland, 31 Dec is <b>Hogmanay</b>.</td></tr>
-      <tr><td>14 Feb</td><td>Valentine's Day</td></tr>
-      <tr><td>1 Apr</td><td>April Fool's Day — jokes until midday</td></tr>
-      <tr><td>14 Apr</td><td><b>Vaisakhi</b> — Sikh festival, founding of the Khalsa</td></tr>
-      <tr><td>Spring</td><td><b>Lent</b> = 40 days before Easter. <b>Shrove Tuesday</b> (pancake day) is the day before Lent; <b>Ash Wednesday</b> is the first day. <b>Mothering Sunday</b> is 3 weeks before Easter.</td></tr>
-      <tr><td>Easter</td><td>Good Friday = crucifixion of Jesus; Easter Sunday = resurrection</td></tr>
-      <tr><td>June</td><td>Father's Day — third Sunday in June</td></tr>
-      <tr><td>31 Oct</td><td>Halloween — ancient pagan festival</td></tr>
-      <tr><td>5 Nov</td><td><b>Bonfire Night</b> — the failed <b>Gunpowder Plot of 1605</b> (Guy Fawkes)</td></tr>
-      <tr><td>11 Nov</td><td><b>Remembrance Day</b> — red poppies, two-minute silence at 11am</td></tr>
-      <tr><td>Oct / Nov</td><td><b>Diwali</b> — Hindu &amp; Sikh festival of lights, 5 days; famous celebrations in <b>Leicester</b></td></tr>
-      <tr><td>Nov / Dec</td><td><b>Hannukah</b> — Jewish, 8 days; candles in a menorah</td></tr>
-      <tr><td>Varies</td><td><b>Eid al-Fitr</b> — end of Ramadan. <b>Eid ul Adha</b> — remembers Ibrahim's willingness to sacrifice his son</td></tr>
-      <tr><td>25–26 Dec</td><td>Christmas Day; <b>Boxing Day</b> on 26 Dec</td></tr>
+      <tr><td>1 Jan</td><td>New Year. Scotland calls 31 Dec <b>Hogmanay</b>, and 1 <i>and</i> 2 Jan are bank holidays there.</td></tr>
+      <tr><td>14 Feb</td><td>Valentine's Day — cards to loved ones</td></tr>
+      <tr><td>1 Apr</td><td>April Fool's Day — jokes until midday, even in newspapers and on TV</td></tr>
+      <tr><td>14 Apr</td><td><b>Vaisakhi</b> — Sikh festival marking the founding of the Khalsa</td></tr>
+      <tr><td>Spring</td><td><b>Lent</b> is the 40 days before Easter. It starts on <b>Ash Wednesday</b>; the day before is <b>Shrove Tuesday</b> (pancake day). <b>Mothering Sunday</b> is 3 weeks before Easter.</td></tr>
+      <tr><td>Mar / Apr</td><td><b>Easter</b> — Good Friday marks Jesus's crucifixion; Easter Sunday his resurrection</td></tr>
+      <tr><td>June</td><td>Father's Day — the third Sunday in June</td></tr>
+      <tr><td>31 Oct</td><td>Halloween — an ancient pagan festival marking the start of winter</td></tr>
+      <tr><td>5 Nov</td><td><b>Bonfire Night</b> — fireworks celebrate the failure of the <b>Gunpowder Plot of 1605</b> to blow up Parliament</td></tr>
+      <tr><td>11 Nov</td><td><b>Remembrance Day</b> — red poppies and a two-minute silence at 11am for those who died in war; the main ceremony is at the <b>Cenotaph</b> in Whitehall</td></tr>
+      <tr><td>Oct / Nov</td><td><b>Diwali</b> — Hindu &amp; Sikh <b>festival of lights</b>, 5 days; famous celebrations in <b>Leicester</b></td></tr>
+      <tr><td>Nov / Dec</td><td><b>Hannukah</b> — Jewish, 8 days; a candle lit each day on a menorah</td></tr>
+      <tr><td>Varies</td><td><b>Eid al-Fitr</b> marks the end of Ramadan (the month of fasting). <b>Eid ul Adha</b> remembers Ibrahim's willingness to sacrifice his son.</td></tr>
+      <tr><td>24–26 Dec</td><td>Christmas Eve; <b>Christmas Day</b> (birth of Jesus); <b>Boxing Day</b> (26 Dec, a public holiday)</td></tr>
     </table></div>
+    <p><b>Bank holidays</b> are public holidays when banks and many businesses close.</p>
 
     <h3>Sport</h3>
+    <p>Many of the world's big sports were invented or shaped in Britain, so expect questions on where they come from and who the heroes are.</p>
     <ul>
-      <li>London hosted the <b>Olympics in 1908, 1948 and 2012</b>. The <b>Paralympics</b> grew from work by <b>Dr Sir Ludwig Guttmann</b> at <b>Stoke Mandeville</b> hospital.</li>
-      <li><b>Cricket</b> — "the Ashes" (England vs Australia). <b>Football</b> — most popular; England won the <b>1966 World Cup</b> (captain <b>Bobby Moore</b>). <b>Rugby</b> — Six Nations (England, Scotland, Wales, Ireland, France, Italy).</li>
-      <li><b>Horse racing</b> — Royal Ascot; the <b>Grand National at Aintree</b> (near Liverpool); Scottish Grand National at Ayr. <b>Golf</b> — <b>St Andrews</b>, Scotland, is the home of golf; the Open Championship. <b>Tennis</b> — <b>Wimbledon</b>, the oldest tennis tournament in the world.</li>
+      <li><b>Golf</b> goes back to <b>15th-century Scotland</b>; <b>St Andrews</b> is "the home of golf". <b>Rugby</b> began in England in the early 1800s; the <b>Six Nations</b> is England, Scotland, Wales, Ireland, France and Italy.</li>
+      <li><b>Cricket's</b> famous series against Australia is <b>the Ashes</b>. <b>Football</b> is the most popular sport; England won the <b>1966 World Cup</b> under captain <b>Bobby Moore</b>.</li>
+      <li><b>Tennis</b>: <b>Wimbledon</b> is the oldest tournament in the world. <b>Rowing</b>: Oxford and Cambridge race each year on the Thames (the Boat Race).</li>
+      <li><b>Horse racing</b>: the <b>Grand National at Aintree</b> (near Liverpool), <b>Royal Ascot</b> (Berkshire), the <b>Scottish Grand National at Ayr</b>, and the National Horseracing Museum at <b>Newmarket</b>.</li>
+      <li>London hosted the <b>Olympics in 1908, 1948 and 2012</b>. The <b>Paralympics</b> grew from <b>Dr Sir Ludwig Guttmann's</b> work at <b>Stoke Mandeville</b> hospital.</li>
     </ul>
     <div class="tbl-wrap"><table>
-      <tr><th>Sportsperson</th><th>Known for</th></tr>
-      <tr><td>Roger Bannister</td><td>First mile under 4 minutes, 1954</td></tr>
-      <tr><td>Jackie Stewart</td><td>Scottish Formula 1 world champion (3 times)</td></tr>
-      <tr><td>Torvill &amp; Dean</td><td>Olympic ice-dancing gold, 1984</td></tr>
+      <tr><th>Sportsperson</th><th>Sport — achievement</th></tr>
+      <tr><td>Roger Bannister</td><td>Athletics — first mile under 4 minutes, 1954</td></tr>
+      <tr><td>Jackie Stewart</td><td>Motor racing — Scottish, Formula 1 champion 3 times</td></tr>
+      <tr><td>Mary Peters</td><td>Athletics — N. Irish, pentathlon gold, 1972</td></tr>
+      <tr><td>Torvill &amp; Dean</td><td>Ice dancing — Olympic gold, 1984</td></tr>
       <tr><td>Steve Redgrave</td><td>Rowing — gold at 5 Olympics in a row</td></tr>
-      <tr><td>Tanni Grey-Thompson</td><td>Paralympic <b>wheelchair racing</b> — 16 medals, 11 gold</td></tr>
-      <tr><td>Kelly Holmes</td><td>Two athletics golds, 2004</td></tr>
-      <tr><td>Ellen MacArthur</td><td>Fastest solo sail around the world, 2004</td></tr>
-      <tr><td>Chris Hoy</td><td>Scottish cyclist — 6 Olympic golds</td></tr>
-      <tr><td>David Weir</td><td>Paralympic wheelchair athlete — 6 golds</td></tr>
-      <tr><td>Bradley Wiggins</td><td>First Briton to win the Tour de France, 2012</td></tr>
-      <tr><td>Mo Farah</td><td>5,000m &amp; 10,000m Olympic golds, 2012</td></tr>
-      <tr><td>Jessica Ennis</td><td>Heptathlon gold, 2012</td></tr>
-      <tr><td>Andy Murray</td><td>Scottish tennis player; Wimbledon men's singles 2013</td></tr>
-      <tr><td>Ellie Simmonds</td><td>Paralympic swimmer</td></tr>
+      <tr><td>Tanni Grey-Thompson</td><td>Paralympic <b>wheelchair racing</b> — 11 golds</td></tr>
+      <tr><td>Ellie Simmonds</td><td>Paralympic <b>swimming</b> — golds 2008, 2012, 2016</td></tr>
+      <tr><td>Kelly Holmes</td><td>Athletics — two golds, 2004</td></tr>
+      <tr><td>Ellen MacArthur</td><td>Sailing — fastest solo trip round the world, 2004</td></tr>
+      <tr><td>Chris Hoy</td><td>Cycling — Scottish, 6 Olympic golds</td></tr>
+      <tr><td>David Weir</td><td>Paralympic wheelchair athletics — 6 golds</td></tr>
+      <tr><td>Bradley Wiggins</td><td>Cycling — first Briton to win the Tour de France, 2012</td></tr>
+      <tr><td>Mo Farah</td><td>Athletics — 5,000m &amp; 10,000m golds, 2012</td></tr>
+      <tr><td>Jessica Ennis</td><td>Athletics — heptathlon gold, 2012</td></tr>
+      <tr><td>Andy Murray</td><td>Tennis — Scottish, won Wimbledon 2013</td></tr>
     </table></div>
 
-    <h3>Arts &amp; culture</h3>
+    <h3>Music &amp; theatre</h3>
     <ul>
-      <li><b>Music:</b> Purcell; <b>Handel</b> (<i>Water Music</i>); <b>Holst</b> (<i>The Planets</i>); <b>Elgar</b> (<i>Pomp and Circumstance</i>); <b>Britten</b> (opera <i>Peter Grimes</i>). <b>The Proms</b> — 8 weeks of concerts, mainly at the <b>Royal Albert Hall</b>. Festivals: Glastonbury, Isle of Wight, the Welsh <b>National Eisteddfod</b>. Awards: Mercury Prize, Brit Awards.</li>
-      <li><b>Theatre:</b> London's West End; <b>Edinburgh Festival</b> and Fringe; <b>Laurence Olivier Awards</b>. <b>Gilbert &amp; Sullivan</b> comic operas; <b>Andrew Lloyd Webber</b> musicals. <b>Pantomime</b> at Christmas.</li>
-      <li><b>Art:</b> Gainsborough (portraits), <b>Constable</b> (landscapes, Dedham Vale), <b>Turner</b> (landscapes), <b>L S Lowry</b> (northern industrial towns), <b>Henry Moore</b> (sculptor), <b>David Hockney</b> (1960s pop art). <b>Turner Prize</b> (since 1984) for contemporary art.</li>
-      <li><b>Architecture &amp; design:</b> Christopher Wren (St Paul's), Robert Adam, <b>Capability Brown</b> &amp; Gertrude Jekyll (gardens), Edwin Lutyens (the <b>Cenotaph</b>). Chippendale (furniture), Clarice Cliff (ceramics), Mary Quant &amp; Vivienne Westwood (fashion). Chelsea Flower Show.</li>
-      <li><b>Writers:</b> Jane Austen (<i>Pride and Prejudice</i>), Charles Dickens (<i>Oliver Twist</i>), Robert Louis Stevenson (<i>Treasure Island</i>), Thomas Hardy, Arthur Conan Doyle (Sherlock Holmes), Evelyn Waugh, Graham Greene, J K Rowling (Harry Potter). Nobel Prize winners: William Golding, Seamus Heaney, Harold Pinter. <b>Man Booker Prize</b> for fiction.</li>
-      <li><b>Poets:</b> <i>Beowulf</i> (Anglo-Saxon), Chaucer, Milton (<i>Paradise Lost</i>), <b>Wordsworth</b> (daffodils), Burns, Blake, Keats, Shelley, Byron, Tennyson, Elizabeth Barrett Browning, Walter Scott. First World War poets: <b>Wilfred Owen</b>, Siegfried Sassoon. <b>Dylan Thomas</b> — Welsh poet.</li>
-      <li><b>Film &amp; comedy:</b> Charlie Chaplin, Alfred Hitchcock; Ealing comedies; James Bond; <b>BAFTA</b> awards. <i>Punch</i> magazine; <i>Monty Python</i>.</li>
+      <li><b>Handel</b> (German-born) wrote the <i>Water Music</i> for George I; <b>Holst</b> wrote <i>The Planets</i>; <b>Elgar</b> wrote the <i>Pomp and Circumstance</i> marches; <b>Britten</b> wrote the opera <i>Peter Grimes</i>.</li>
+      <li><b>The Proms</b> is an eight-week summer season of classical concerts, mainly at the <b>Royal Albert Hall</b>.</li>
+      <li>Big festivals include Glastonbury and Wales's <b>National Eisteddfod</b> (music, poetry and dance). Awards: the <b>Mercury Prize</b> (best album) and the Brit Awards.</li>
+      <li>London's <b>West End</b> is known as "Theatreland"; its awards are the <b>Laurence Olivier Awards</b>. The <b>Edinburgh Festival</b> and <b>Fringe</b> (mainly theatre and comedy) take place every summer.</li>
+      <li><b>Gilbert and Sullivan</b> wrote comic operas; <b>Andrew Lloyd Webber</b> writes musicals. <b>Pantomimes</b> — comic plays based on fairy stories — are a Christmas tradition.</li>
     </ul>
 
-    <h3>Places of interest</h3>
+    <h3>Art, architecture &amp; design</h3>
+    <ul>
+      <li>Painters: <b>Gainsborough</b> (portraits), <b>Constable</b> (landscapes of Dedham Vale), <b>Turner</b> (landscapes), <b>Lowry</b> (northern industrial towns), <b>David Hockney</b> (1960s pop art). Sculptor: <b>Henry Moore</b>.</li>
+      <li>The <b>Turner Prize</b> (since 1984) is for contemporary art. <b>Tate Britain</b> and <b>Tate Modern</b> are in London.</li>
+      <li>Architects: <b>Wren</b> (St Paul's), <b>Lutyens</b> (the <b>Cenotaph</b>), and garden designers <b>Capability Brown</b> and Gertrude Jekyll. The <b>Chelsea Flower Show</b> is held every year.</li>
+      <li>Design: <b>Chippendale</b> (furniture), <b>Clarice Cliff</b> (Art Deco ceramics), Mary Quant and Vivienne Westwood (fashion).</li>
+    </ul>
+
+    <h3>Books, poems &amp; film</h3>
+    <ul>
+      <li>Novels: <b>Jane Austen</b> — <i>Pride and Prejudice</i>; <b>Dickens</b> — <i>Oliver Twist</i>; <b>Robert Louis Stevenson</b> — <i>Treasure Island</i>; <b>Thomas Hardy</b> — <i>Far from the Madding Crowd</i>; <b>Conan Doyle</b> — Sherlock Holmes; <b>Tolkien</b> — <i>The Lord of the Rings</i>, voted the best-loved novel in 2003; <b>J K Rowling</b> — Harry Potter.</li>
+      <li>Nobel Prize winners: <b>William Golding</b> (<i>Lord of the Flies</i>), Seamus Heaney, Harold Pinter. The <b>Man Booker Prize</b> is for the best novel.</li>
+      <li>Poems: <i>Beowulf</i> (Anglo-Saxon hero fighting monsters), Chaucer, <b>Milton</b> (<i>Paradise Lost</i>), <b>Wordsworth</b> (daffodils, inspired by nature), Burns, Blake, Keats, Shelley, Byron, Tennyson. First World War poets: <b>Wilfred Owen</b>, Siegfried Sassoon. Welsh poet: <b>Dylan Thomas</b>.</li>
+      <li>Film: <b>Charlie Chaplin</b> (the tramp, silent films), <b>Alfred Hitchcock</b> (<i>The 39 Steps</i>, 1935), <b>Nick Park</b> (Wallace and Gromit, several Oscars). The <b>James Bond</b> and <b>Harry Potter</b> series are among the most successful ever. Film awards: the <b>BAFTAs</b>.</li>
+      <li>Comedy and satire: <i>Punch</i> magazine (1840s) and <i>Monty Python's Flying Circus</i>.</li>
+    </ul>
+
+    <h3>Places to know</h3>
     <div class="tbl-wrap"><table>
-      <tr><th>Place</th><th>Fact</th></tr>
-      <tr><td>Big Ben</td><td>The great bell of the Houses of Parliament clock. Tower renamed <b>Elizabeth Tower</b> in 2012.</td></tr>
-      <tr><td>Eden Project</td><td>Cornwall — giant greenhouses (biomes)</td></tr>
-      <tr><td>Giant's Causeway</td><td>Northern Ireland — about 40,000 basalt columns</td></tr>
-      <tr><td>Loch Lomond</td><td>Largest expanse of fresh water in mainland Britain</td></tr>
-      <tr><td>Snowdonia</td><td>National park in North Wales; Snowdon is the highest mountain in Wales</td></tr>
-      <tr><td>Lake District</td><td>England's largest national park; Windermere is England's longest lake</td></tr>
-      <tr><td>Tower of London</td><td>Built by William the Conqueror; Crown Jewels; Yeoman Warders ("Beefeaters")</td></tr>
-      <tr><td>Edinburgh Castle</td><td>Dominates Edinburgh's skyline</td></tr>
-      <tr><td>London Eye</td><td>Built for the millennium celebrations</td></tr>
+      <tr><th>Place</th><th>Why it's famous</th></tr>
+      <tr><td>Big Ben</td><td>The great bell of Parliament's clock; tower renamed <b>Elizabeth Tower</b> in 2012</td></tr>
+      <tr><td>Houses of Parliament</td><td>Rebuilt in the 19th century after a fire</td></tr>
+      <tr><td>Tower of London</td><td>Built by William the Conqueror; holds the Crown Jewels; tours by Yeoman Warders ("Beefeaters")</td></tr>
+      <tr><td>London Eye</td><td>Giant wheel built for the millennium</td></tr>
+      <tr><td>Eden Project</td><td>Giant greenhouses in <b>Cornwall</b></td></tr>
+      <tr><td>Giant's Causeway</td><td>About 40,000 volcanic basalt columns in <b>Northern Ireland</b></td></tr>
+      <tr><td>Loch Lomond</td><td>Largest expanse of fresh water in mainland Britain (Scotland)</td></tr>
+      <tr><td>Snowdonia</td><td>National park in <b>North Wales</b>; Snowdon is Wales's highest mountain</td></tr>
+      <tr><td>Lake District</td><td>England's largest national park; Windermere is England's longest lake; <b>Wastwater</b> voted Britain's favourite view (2007)</td></tr>
     </table></div>
     <ul>
-      <li><b>National Trust</b> (founded 1895) — a charity that preserves buildings, coastline and countryside.</li>
-      <li>Food: England — roast beef with Yorkshire pudding, fish and chips. Scotland — <b>haggis</b>. Wales — Welsh cakes. Northern Ireland — Ulster fry.</li>
-      <li>Ages: <b>18</b> to buy alcohol or tobacco, and to gamble. National Lottery: handbook says 16 <i>(now 18)</i>.</li>
+      <li>There are <b>15 national parks</b> in England, Wales and Scotland — protected countryside that people can visit, and where people also live and work.</li>
+      <li>The <b>National Trust</b> (founded 1895) is a charity that protects buildings, coastline and countryside, with tens of thousands of volunteers.</li>
+      <li>Traditional food: England — roast beef and Yorkshire pudding, fish and chips; Scotland — <b>haggis</b>; Wales — Welsh cakes; Northern Ireland — the <b>Ulster fry</b>.</li>
+      <li>Pubs are a social centre; <b>pool and darts</b> are traditional pub games.</li>
     </ul>
   </section>
 
   <!-- 6 -->
   <section class="card" id="s6" data-title="Government">
     <div class="card-head"><h2>6. Government &amp; democracy</h2></div>
-    <div class="meta">≈ 45 min · frequently tested</div>
+    <div class="meta">≈ 50 min · frequently tested</div>
 
-    <h3>The system</h3>
+    <p class="story">Remember the Stuart story? It ended with Parliament on top — and that's still how it works. The <b>monarch</b> is head of state but doesn't decide policy. <b>Voters</b> elect MPs; the party with the most MPs forms the <b>government</b>; its leader becomes <b>Prime Minister</b>; and the second-largest party becomes the <b>opposition</b>, whose job is to challenge them. Some powers have since been handed down ("devolved") to Scotland, Wales and Northern Ireland.</p>
+
+    <h3>The constitution and the monarch</h3>
     <ul>
-      <li>The UK is a <b>parliamentary democracy</b> with the monarch as head of state — a <b>constitutional monarchy</b>.</li>
-      <li>The constitution is <b>not written in a single document</b> — it is made up of laws, conventions and documents like <b>Magna Carta</b>, <b>Habeas Corpus</b> and the <b>Bill of Rights</b>.</li>
-      <li><b>The monarch</b>: handbook — Queen Elizabeth II, heir Prince Charles <i>(today: King Charles III since 2022, heir Prince William)</i>. The monarch cannot refuse laws passed by Parliament, opens each new session of Parliament (the State Opening and monarch's speech), and meets the PM weekly. National anthem: <i>God Save the Queen/King</i>.</li>
+      <li>The UK is a <b>parliamentary democracy</b> with a <b>constitutional monarch</b>. Its constitution is <b>not written in one single document</b> — it's built from laws, conventions and documents like Magna Carta.</li>
+      <li>Its <b>constitutional institutions</b> are the monarchy, Parliament, the PM and Cabinet, the judiciary, the police, the civil service and local government. (The armed forces are not one.)</li>
+      <li>The <b>monarch</b> is <b>head of state</b> — handbook: Queen Elizabeth II, heir Prince Charles <i>(today: King Charles III since 2022; heir Prince William)</i>. The monarch opens each session of Parliament with a speech setting out the government's plans, meets the PM <b>weekly</b> to <b>advise, warn and encourage</b>, but <b>cannot refuse laws</b> Parliament has passed.</li>
+      <li>The national anthem is <i>God Save the Queen / King</i>.</li>
     </ul>
 
-    <h3>Parliament</h3>
+    <h3>Parliament — two Houses</h3>
     <ul>
-      <li><b>House of Commons</b> — <b>650 MPs</b>, each elected for a <b>constituency</b>. The most important chamber.</li>
-      <li><b>The Speaker</b> — an MP elected by other MPs; <b>politically neutral</b>; chairs debates and keeps order.</li>
-      <li><b>House of Lords</b> — <b>not elected</b>. Life peers (appointed by the monarch on the PM's advice), some hereditary peers, and senior Church of England bishops. It checks laws and can suggest changes, but <b>the Commons can overrule it</b>.</li>
-      <li><b>General elections</b> at least <b>every 5 years</b>. Voting system: <b>first past the post</b> — the candidate with the most votes wins. If an MP dies or resigns: a <b>by-election</b>.</li>
-      <li><b>Whips</b> — make sure MPs attend and vote with their party.</li>
+      <li>The <b>House of Commons</b> has <b>650 MPs</b>, each elected to represent <b>everyone</b> in a <b>constituency</b>. It's the more important House.</li>
+      <li>The <b>Speaker</b> is an MP chosen by other MPs to chair debates and keep order. The Speaker stays <b>neutral</b> but still represents their own constituents.</li>
+      <li>The <b>House of Lords</b> is <b>not elected</b>. Its members, called <b>peers</b>, are life peers (appointed by the monarch on the <b>PM's advice</b>), some hereditary peers, and senior Church of England bishops. The Lords checks and suggests changes to laws, but the <b>Commons can overrule it</b>. Because its members don't depend on votes, it's usually <b>more independent</b> of the government.</li>
+      <li><b>Whips</b> make sure MPs turn up and vote with their party. What's said in Parliament is recorded in <b>Hansard</b>, and anyone can watch from the <b>public galleries</b> of both Houses.</li>
     </ul>
 
-    <h3>Government</h3>
+    <h3>Elections</h3>
     <ul>
-      <li><b>Prime Minister</b> — usually the leader of the party with the most MPs. Lives at <b>10 Downing Street</b>; country house is <b>Chequers</b>.</li>
-      <li><b>The Cabinet</b> — about 20 senior ministers, e.g. the <b>Chancellor of the Exchequer</b> (economy), the <b>Home Secretary</b> (crime, policing, immigration), the <b>Foreign Secretary</b>.</li>
-      <li><b>The Opposition</b> — the second-largest party. Its leader leads a <b>Shadow Cabinet</b> and questions the PM at <b>Prime Minister's Questions</b> each week.</li>
-      <li><b>Civil servants</b> carry out government policy and are <b>politically neutral</b>.</li>
-      <li><b>Local government</b> — councils, funded partly by <b>council tax</b>. Some towns have elected mayors (e.g. London).</li>
+      <li>A <b>general election</b> must be held <b>at least every five years</b>. MPs are elected by <b>"first past the post"</b> — whoever gets the most votes in a constituency wins.</li>
+      <li>If an MP dies or resigns, a <b>by-election</b> fills the seat. If no party wins a majority, two can join in a <b>coalition</b>, as in 2010.</li>
+      <li>Before an election, parties go <b>canvassing</b> (door-to-door or with leaflets), and <b>radio and TV must give balanced coverage</b> to all main parties. You get a <b>poll card</b> telling you where and when to vote.</li>
+      <li>You must be <b>18</b> to vote in a general election (since <b>1969</b>) and must be on the <b>electoral register</b>, which you join through your local council — you can register at any time. Voting is <b>secret</b>. The handbook notes that Northern Ireland used <b>individual registration</b> (everyone fills in their own form) <i>(the rest of the UK does too since 2014)</i>.</li>
+      <li><b>UK, Irish and qualifying Commonwealth citizens</b> living here can vote in all elections. Most of them aged 18+ can also stand as an MP — but <b>not civil servants, members of the armed forces</b>, or people convicted of certain crimes.</li>
+      <li>You can contact your MP by letter or phone at their <b>constituency office or Commons office</b>, or meet them at a local <b>surgery</b>.</li>
     </ul>
 
-    <h3>Devolved administrations (since 1997–99)</h3>
+    <h3>The government</h3>
+    <ul>
+      <li>The <b>Prime Minister</b> leads the largest party. The official home is <b>10 Downing Street</b>; the country house is <b>Chequers</b>.</li>
+      <li>The PM chooses about 20 senior ministers for the <b>Cabinet</b>, including the <b>Chancellor of the Exchequer</b> (the economy), the <b>Home Secretary</b> (crime, policing, immigration) and the <b>Foreign Secretary</b>.</li>
+      <li>The <b>Leader of the Opposition</b> picks a <b>Shadow Cabinet</b> to challenge the government and offer alternatives, and questions the PM every week at <b>Prime Minister's Questions</b>.</li>
+      <li><b>Civil servants</b> carry out the government's work. They're appointed on <b>merit</b> and must stay <b>politically neutral</b>.</li>
+      <li><b>Local councils</b> are <b>democratically elected</b> and paid for partly by <b>council tax</b>. London has an elected <b>Mayor</b>.</li>
+      <li>The <b>BBC</b> is paid for by the TV licence fee but is <b>independent</b> of government. <b>Pressure groups</b> try to influence policy.</li>
+    </ul>
+
+    <h3>Devolution — power shared with the nations</h3>
+    <p>Since 1997–99, Scotland, Wales and Northern Ireland have their own law-making bodies for things like <b>education and health</b>. The UK government keeps the big national matters: <b>defence, foreign affairs and immigration</b>.</p>
     <div class="tbl-wrap"><table>
-      <tr><th>Body</th><th>Where</th><th>Members</th></tr>
-      <tr><td>Scottish Parliament</td><td>Holyrood, Edinburgh</td><td>129 MSPs</td></tr>
-      <tr><td>Welsh Assembly</td><td>Cardiff Bay</td><td>60 AMs <i>(now the Senedd — 96 members from 2026)</i></td></tr>
-      <tr><td>N. Ireland Assembly</td><td>Stormont, Belfast</td><td>108 MLAs <i>(90 since 2017)</i></td></tr>
+      <tr><th>Body</th><th>Where</th><th>Members &amp; voting</th></tr>
+      <tr><td>Scottish Parliament</td><td>Holyrood, Edinburgh</td><td>129 MSPs, proportional representation</td></tr>
+      <tr><td>Welsh Parliament (Senedd)</td><td>Cardiff Bay</td><td>Handbook: 60 members, elected every 4 years <i>(96 members from 2026)</i></td></tr>
+      <tr><td>N. Ireland Assembly</td><td>Stormont, Belfast</td><td>Handbook: 108 MLAs <i>(90 now)</i>, proportional representation; created after the Good Friday Agreement; has been suspended several times</td></tr>
     </table></div>
-    <ul>
-      <li>Devolved: education, health, agriculture, environment, local transport and similar.</li>
-      <li><b>Not devolved</b> (UK Parliament keeps them): <b>defence, foreign affairs, immigration</b>, most taxation and social security.</li>
-      <li>The Scottish Parliament can pass laws on all matters not reserved to Westminster; the NI Assembly has at times been suspended.</li>
-    </ul>
+    <div class="hook"><b>Remember it:</b> anything that protects the whole country — <b>army, borders, foreign policy</b> — stays in London. Things people use locally — <b>schools, hospitals, farming</b> — are devolved.</div>
 
-    <h3>Voting</h3>
+    <h3>The UK and the world</h3>
     <ul>
-      <li>Voting age: <b>18</b> for UK general elections <i>(16 in Scottish and Welsh parliament and local elections)</i>.</li>
-      <li>Who can vote in all elections: <b>UK citizens</b>, and <b>Irish and qualifying Commonwealth citizens</b> resident in the UK.</li>
-      <li>You must be on the <b>electoral register</b>; councils update it every year. Ballot is <b>secret</b>; you can vote in person at a polling station or by post.</li>
-      <li>Most citizens <b>aged 18+</b> can stand as an MP. You can contact your MP by letter, phone, or at their local "surgery".</li>
-    </ul>
-
-    <h3>UK and the world</h3>
-    <ul>
-      <li><b>Commonwealth</b> — association of countries, mostly former British Empire. Handbook: 54 members <i>(now 56)</i>. The monarch is its head. Membership is voluntary.</li>
-      <li><b>United Nations</b> — the UK is one of the <b>five permanent members</b> of the Security Council. Also in <b>NATO</b>.</li>
-      <li><b>Council of Europe</b> — separate from the EU; created the <b>European Convention on Human Rights</b>. It has no power to make laws.</li>
-      <li><b>European Union</b> — UK joined the EEC in 1973. <i>(UK left the EU on 31 January 2020.)</i></li>
+      <li>The <b>Commonwealth</b> is a voluntary association of countries, mostly from the former empire, with the <b>monarch as its head</b>. It has no power over its members but can <b>suspend</b> one.</li>
+      <li>The UK is one of the <b>five permanent members</b> of the <b>UN Security Council</b>, and a member of <b>NATO</b>.</li>
+      <li>The <b>Council of Europe</b> is separate from the EU; it created the <b>European Convention on Human Rights</b> but cannot make laws.</li>
     </ul>
   </section>
 
   <!-- 7 -->
-  <section class="card" id="s7" data-title="Law &amp; community">
+  <section class="card" id="s7" data-title="Law &amp; everyday life">
     <div class="card-head"><h2>7. The law &amp; your role in the community</h2></div>
-    <div class="meta">≈ 40 min</div>
+    <div class="meta">≈ 50 min</div>
 
-    <h3>Criminal vs civil law</h3>
+    <p class="story">The law has two halves. <b>Criminal law</b> is the state punishing wrongdoing, through the police and courts. <b>Civil law</b> is about sorting out disputes between people, such as with a landlord or an employer. Around that sit your rights, your taxes, and the everyday rules (ages, driving, licences) that the test likes to check.</p>
+
+    <h3>Criminal or civil?</h3>
     <ul>
-      <li><b>Criminal law</b> — crimes investigated by police and punished by courts: carrying weapons, selling drugs, racial crime, selling alcohol to under-18s, smoking in public places.</li>
-      <li><b>Civil law</b> — disputes between people: housing, employment, consumer rights, debt, discrimination.</li>
+      <li><b>Criminal</b>: carrying a weapon, selling drugs, racial crime, selling alcohol or tobacco to under-18s, smoking in enclosed public places, driving without insurance.</li>
+      <li><b>Civil</b>: disputes over housing, employment (including <b>workplace discrimination</b>), consumer rights and debt.</li>
     </ul>
 
     <h3>The courts</h3>
+    <p>Minor cases go to local courts run by volunteers; serious ones go to higher courts with a jury. Scotland uses different names.</p>
     <div class="tbl-wrap"><table>
       <tr><th>Case type</th><th>England, Wales &amp; NI</th><th>Scotland</th></tr>
       <tr><td>Minor crimes</td><td>Magistrates' Court</td><td>Justice of the Peace Court</td></tr>
@@ -546,40 +635,55 @@
       <tr><td>Civil disputes</td><td>County Court</td><td>Sheriff Court</td></tr>
     </table></div>
     <ul>
-      <li>Magistrates (Justices of the Peace) are usually <b>unpaid volunteers</b> with no legal qualifications.</li>
-      <li><b>Small claims procedure</b> — an informal way to settle minor disputes without an expensive lawyer.</li>
-      <li>Judges are <b>independent</b> of government. The highest court is the <b>Supreme Court</b>.</li>
-      <li>Help: <b>solicitors</b> and <b>Citizens Advice</b>.</li>
+      <li><b>Magistrates</b> (Justices of the Peace) are usually <b>unpaid volunteers</b> without legal qualifications.</li>
+      <li>A <b>Youth Court</b> is run by up to three trained magistrates or a District Judge. The public can't attend, and the media <b>cannot publish the names or photos</b> of the young people accused.</li>
+      <li><b>Jurors</b> are picked <b>at random from the electoral register</b>, aged <b>18 to 70</b> <i>(now up to 75 in England and Wales)</i>.</li>
+      <li>The <b>small claims procedure</b> settles minor disputes informally, without an expensive lawyer. <b>Solicitors</b> usually charge by the <b>time</b> they spend; <b>Citizens Advice</b> gives free advice.</li>
+      <li>Judges are <b>independent</b> of government; the highest court is the <b>Supreme Court</b>.</li>
     </ul>
 
     <h3>The police</h3>
     <ul>
-      <li>Duties: protect life and property, prevent disturbances (keep the peace), prevent and detect crime.</li>
-      <li><b>Police Community Support Officers (PCSOs)</b> support police on the streets.</li>
-      <li><b>Police and Crime Commissioners (PCCs)</b> — elected since November 2012.</li>
-      <li>Complaints go to an independent body (handbook: the IPCC in England and Wales; Police Ombudsman in Northern Ireland).</li>
-      <li>In an emergency call <b>999</b> or <b>112</b>; non-emergency <b>101</b>.</li>
+      <li>The police <b>protect life and property</b>, keep the peace, and prevent and detect crime. <b>PCSOs</b> (Police Community Support Officers) support them on the streets. Since 2012, each area elects a <b>Police and Crime Commissioner</b>.</li>
+      <li>To <b>complain about the police</b>, go to a police station, write to the <b>Chief Constable</b>, or contact an independent complaints body.</li>
+      <li>Call <b>999 or 112</b> in an emergency and <b>101</b> otherwise. If anyone tries to recruit you into <b>extremism</b>, tell your <b>local police</b>.</li>
     </ul>
 
-    <h3>Rights &amp; equality</h3>
+    <h3>Your rights and protection</h3>
     <ul>
-      <li><b>Human Rights Act 1998</b> brought the European Convention on Human Rights into UK law: right to life, freedom from torture and slavery, right to a fair trial, freedom of thought, conscience, religion and expression.</li>
-      <li><b>Equality Act 2010</b> — illegal to discriminate on grounds of age, disability, sex, pregnancy, race, religion, sexuality, marital status and others.</li>
-      <li>Illegal: <b>domestic violence</b> (including between spouses), <b>forced marriage</b>, <b>female genital mutilation (FGM)</b>.</li>
+      <li>The <b>Human Rights Act 1998</b> brought the European Convention on Human Rights into UK law: the right to life, a fair trial, freedom of religion and expression, and freedom from torture and slavery.</li>
+      <li>The <b>Equality Act 2010</b> bans discrimination on grounds such as age, disability, sex, race, religion and sexuality.</li>
+      <li><b>Domestic violence</b> is a crime, whether or not the couple is married — and a husband who forces his wife to have sex can be charged with <b>rape</b>.</li>
+      <li><b>Forced marriage</b> is illegal, and courts can issue <b>Forced Marriage Protection Orders</b>. <b>FGM</b> is illegal, including taking a girl abroad for it.</li>
     </ul>
 
-    <h3>Taxes &amp; driving</h3>
+    <h3>Money, work and tax</h3>
     <ul>
-      <li><b>Income tax</b>, <b>National Insurance</b> (pays for state pension and NHS — get a National Insurance number), <b>council tax</b> for local services. Collected by HMRC.</li>
-      <li>Driving: at least <b>17</b> for a car licence. Must have <b>insurance</b>. Cars over 3 years old need an annual <b>MOT</b> test.</li>
+      <li><b>Income tax</b> pays for national services such as roads, education, police and the armed forces. <b>National Insurance</b> pays for the state pension and the NHS. <b>Council tax</b> pays for local services. <b>HMRC</b> collects tax.</li>
+      <li>To work you need a <b>National Insurance number</b>, which you apply for through the <b>Department for Work and Pensions (DWP)</b> with proof of identity and right to work.</li>
+      <li>Women make up about <b>half the workforce</b>. Most shops open seven days a week, with shorter hours on Sundays.</li>
+    </ul>
+
+    <h3>Ages and licences — the numbers to know</h3>
+    <div class="tbl-wrap"><table>
+      <tr><th>Age</th><th>What you can do</th></tr>
+      <tr><td>16</td><td>Ride a moped. Drink wine or beer <b>with a meal</b> in a restaurant if with someone over 18. Join the <b>National Citizen Service</b> (16–17, voluntary). Vote in Scottish &amp; Welsh parliament elections.</td></tr>
+      <tr><td>17</td><td>Drive a car or motorcycle (with a licence)</td></tr>
+      <tr><td>18</td><td>Vote in general elections, stand as an MP, buy alcohol or tobacco, enter betting shops, serve on a jury</td></tr>
+    </table></div>
+    <ul>
+      <li>Drivers must have <b>insurance</b>; cars over <b>three years old</b> need a yearly <b>MOT</b>. New drivers in Northern Ireland show an <b>"R" plate</b> for a year.</li>
+      <li>You need a <b>TV licence</b> to watch live TV — the fine for not having one is up to <b>£1,000</b>.</li>
+      <li>In public, a <b>dog must wear a collar</b> with the owner's name and address.</li>
     </ul>
 
     <h3>Being a good citizen</h3>
+    <p>The values from Section 1 come back here in practical form: <b>take part, help others, look after your area</b>.</p>
     <ul>
-      <li><b>Jury service</b> — anyone on the electoral register aged <b>18 to 70</b> can be asked to serve <i>(in England &amp; Wales now up to 75)</i>.</li>
-      <li><b>Volunteering</b> — charities, school governors, neighbourhood watch, helping elderly neighbours.</li>
-      <li><b>Donate blood and organs</b> — sign the NHS Organ Donor Register.</li>
-      <li><b>Look after the environment</b> — recycle, don't drop litter, shop locally, walk or use public transport.</li>
+      <li><b>Volunteer</b> — for example as a <b>school governor</b>, who sets a school's direction and checks how well it's doing, or with Neighbourhood Watch.</li>
+      <li><b>Give</b> — blood, and organs through the NHS Organ Donor Register (living people can even donate a kidney).</li>
+      <li><b>Support charities</b> — e.g. <b>Friends of the Earth</b> (environment), <b>Age UK</b> (older people), the NSPCC (children), Shelter (homeless people).</li>
+      <li><b>Look after the environment</b> — recycle (it saves energy and reduces landfill), don't drop litter, shop locally.</li>
     </ul>
   </section>
 
@@ -588,19 +692,19 @@
     <div class="card-head"><h2>8. Last-hour cheat sheet</h2></div>
     <div class="meta">≈ 15 min · read this right before your test</div>
 
-    <h3>Key dates in order</h3>
+    <h3>The story of Britain in dates</h3>
     <div class="tbl-wrap"><table>
       <tr><th>Date</th><th>Event</th></tr>
-      <tr><td>55 BC</td><td>Julius Caesar's failed invasion</td></tr>
-      <tr><td>AD 43</td><td>Roman invasion under Claudius</td></tr>
+      <tr><td>55 BC</td><td>Julius Caesar's invasion fails</td></tr>
+      <tr><td>AD 43</td><td>Romans invade under Claudius</td></tr>
       <tr><td>AD 410</td><td>Romans leave</td></tr>
       <tr><td>789</td><td>Vikings first arrive</td></tr>
       <tr><td>1066</td><td>Battle of Hastings — Norman Conquest</td></tr>
-      <tr><td>1215</td><td>Magna Carta (King John)</td></tr>
+      <tr><td>1215</td><td>Magna Carta — the king must obey the law</td></tr>
       <tr><td>1284</td><td>Statute of Rhuddlan — Wales annexed</td></tr>
-      <tr><td>1314</td><td>Battle of Bannockburn — Scotland wins</td></tr>
-      <tr><td>1348</td><td>Black Death</td></tr>
-      <tr><td>1415</td><td>Battle of Agincourt (Henry V)</td></tr>
+      <tr><td>1314</td><td>Bannockburn — Scotland stays free</td></tr>
+      <tr><td>1348</td><td>Black Death kills a third of England</td></tr>
+      <tr><td>1415</td><td>Agincourt (Henry V)</td></tr>
       <tr><td>1455–1485</td><td>Wars of the Roses → Bosworth Field</td></tr>
       <tr><td>1588</td><td>Spanish Armada defeated</td></tr>
       <tr><td>1603</td><td>James VI of Scotland becomes James I of England</td></tr>
@@ -611,30 +715,35 @@
       <tr><td>1688–89</td><td>Glorious Revolution; Bill of Rights</td></tr>
       <tr><td>1707</td><td>Act of Union — Kingdom of Great Britain</td></tr>
       <tr><td>1721</td><td>Walpole, first Prime Minister</td></tr>
-      <tr><td>1746</td><td>Battle of Culloden</td></tr>
+      <tr><td>1746</td><td>Culloden</td></tr>
+      <tr><td>1776</td><td>American independence</td></tr>
       <tr><td>1801</td><td>Union with Ireland; Union Flag</td></tr>
       <tr><td>1805 / 1815</td><td>Trafalgar (Nelson) / Waterloo (Wellington)</td></tr>
       <tr><td>1807 / 1833</td><td>Slave trade banned / slavery abolished</td></tr>
       <tr><td>1851</td><td>Great Exhibition, Crystal Palace</td></tr>
       <tr><td>1914–1918</td><td>First World War</td></tr>
       <tr><td>1918 / 1928</td><td>Women over 30 vote / women vote at 21</td></tr>
+      <tr><td>1922</td><td>Ireland splits; Northern Ireland stays in UK</td></tr>
       <tr><td>1939–1945</td><td>Second World War</td></tr>
       <tr><td>1948</td><td>NHS founded</td></tr>
+      <tr><td>1969</td><td>Voting age lowered to 18</td></tr>
       <tr><td>1973</td><td>UK joins the EEC</td></tr>
       <tr><td>1979–1990</td><td>Margaret Thatcher PM</td></tr>
       <tr><td>1998 / 1999</td><td>Good Friday Agreement / Scottish Parliament &amp; Welsh Assembly</td></tr>
+      <tr><td>2010</td><td>Conservative–Lib Dem coalition</td></tr>
     </table></div>
 
     <h3>Key numbers</h3>
     <div class="chips">
       <span class="chip"><b>650</b> MPs</span>
       <span class="chip"><b>129</b> MSPs</span>
-      <span class="chip"><b>60</b> Welsh AMs</span>
-      <span class="chip"><b>108</b> NI MLAs</span>
+      <span class="chip"><b>60</b> Senedd members</span>
+      <span class="chip"><b>108</b> NI MLAs (90 now)</span>
       <span class="chip"><b>5</b> years max between elections</span>
       <span class="chip"><b>18</b> voting age</span>
       <span class="chip">jury <b>12</b> (E/W/NI) · <b>15</b> (Scot)</span>
       <span class="chip">jury age <b>18–70</b></span>
+      <span class="chip"><b>15</b> national parks</span>
       <span class="chip"><b>116</b> years — Hundred Years War</span>
       <span class="chip"><b>⅓</b> killed by Black Death</span>
       <span class="chip"><b>400</b> years of Roman rule</span>
@@ -652,9 +761,11 @@
       <tr><td>Cavaliers</td><td>Supported the king. <b>Roundheads</b> supported Parliament.</td></tr>
       <tr><td>Lancaster</td><td>Red rose. <b>York</b> — white rose.</td></tr>
       <tr><td>Magistrates' Court</td><td>Minor crime in E/W/NI. In Scotland: <b>Justice of the Peace Court</b>.</td></tr>
+      <tr><td>Criminal law</td><td>The state punishes crime. <b>Civil law</b> — disputes between people.</td></tr>
       <tr><td>House of Lords</td><td>Not elected. <b>House of Commons</b> — elected MPs.</td></tr>
       <tr><td>Council of Europe</td><td>Human rights convention. Not the same as the <b>European Union</b>.</td></tr>
-      <tr><td>Crown dependencies</td><td>Isle of Man, Channel Islands — <b>not</b> part of the UK.</td></tr>
+      <tr><td>Crown dependencies</td><td>Isle of Man, Channel Islands. <b>Overseas territories</b> — Falklands, St Helena.</td></tr>
+      <tr><td>Eid al-Fitr</td><td>End of Ramadan. <b>Eid ul Adha</b> — Ibrahim's sacrifice.</td></tr>
       <tr><td>Hogmanay</td><td>Scottish New Year's Eve. <b>Vaisakhi</b> is Sikh; <b>Diwali</b> Hindu/Sikh; <b>Hannukah</b> Jewish.</td></tr>
     </table></div>
 
@@ -662,8 +773,8 @@
     <ul>
       <li>About 1 minute per question is plenty — 45 minutes for 24 questions.</li>
       <li>Some questions ask you to pick <b>two</b> answers — read the question carefully.</li>
-      <li>"True or false" questions: an absolute word ("always", "never", "only") is often a clue it's false.</li>
-      <li>Bring the photo ID you booked with. You'll get the result the same day.</li>
+      <li>In "true or false" questions, absolute words like "always", "never" or "only" are often a clue the statement is false.</li>
+      <li>Bring the photo ID you booked with. You'll get your result the same day.</li>
     </ul>
   </section>
 

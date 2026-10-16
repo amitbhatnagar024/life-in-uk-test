@@ -56,6 +56,15 @@
   /* Section title */
   .section-title { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
 
+  /* Study guide banner */
+  .study-banner { display: flex; align-items: center; gap: 14px; background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; text-decoration: none; color: var(--text); transition: box-shadow 0.15s; }
+  .study-banner:hover { box-shadow: 0 0 0 3px rgba(29,78,216,0.08); }
+  .study-icon { font-size: 1.6rem; }
+  .study-body { flex: 1; display: flex; flex-direction: column; }
+  .study-body strong { font-size: 15px; font-weight: 600; color: var(--accent-text); }
+  .study-body span { font-size: 13px; color: var(--text-secondary); }
+  .study-arrow { font-size: 18px; color: var(--accent-text); font-weight: 600; }
+
   /* Test cards */
   .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
   .test-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; cursor: pointer; transition: border-color 0.15s, box-shadow 0.15s; text-align: left; }
@@ -152,6 +161,12 @@
       <div class="stat"><div class="num" id="stat-best">—</div><div class="lbl">Best score</div></div>
       <div class="stat"><div class="num" id="stat-pass">0</div><div class="lbl">Passes</div></div>
     </div>
+
+    <a class="study-banner" href="study.html">
+      <span class="study-icon">📖</span>
+      <span class="study-body"><strong>New here? Start with the study guide</strong><span>Everything the test covers, condensed into a few hours of reading</span></span>
+      <span class="study-arrow">→</span>
+    </a>
 
     <div class="section-title">Choose a practice test</div>
     <div class="menu-grid" id="test-menu"></div>
